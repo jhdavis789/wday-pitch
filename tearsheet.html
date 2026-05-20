@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WDAY tearsheet — IC document</title>
+
+<style>
+  :root {
+    --navy:    #00294b;
+    --navy2:   #003a66;
+    --teal:    #007e6c;
+    --magenta: #a6256e;
+    --gray:    #44525c;
+    --bg:      #fbfcfd;
+    --rule:    #d8dde2;
+    --cell:    #f3f5f7;
+  }
+  html { background: #eef0f3; }
+  body {
+    max-width: 880px;
+    margin: 24px auto;
+    padding: 40px 48px 60px;
+    background: var(--bg);
+    color: #1a2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.55;
+    box-shadow: 0 4px 24px rgba(0,41,75,.10);
+  }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 30px; color: var(--navy); margin: 0 0 4px; font-weight: 700; line-height: 1.15; }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 22px; color: var(--navy); margin: 36px 0 10px; font-weight: 700; border-bottom: 2px solid var(--navy); padding-bottom: 6px; }
+  h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; color: var(--navy2); margin: 22px 0 6px; font-weight: 600; }
+  p  { margin: 8px 0 12px; }
+  strong { color: var(--navy); }
+  em { color: var(--gray); }
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--navy); }
+  a:hover { color: var(--teal); border-bottom-style: solid; }
+  ul, ol { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 4px; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
+  table { border-collapse: collapse; margin: 14px 0 18px; width: 100%; font-size: 13.5px; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: var(--navy); color: white; font-weight: 600; }
+  tr:nth-child(even) td { background: var(--cell); }
+  blockquote { border-left: 3px solid var(--teal); margin: 10px 0; padding: 4px 14px; color: var(--gray); }
+  img { max-width: 100%; height: auto; display: block; margin: 14px auto; border: 1px solid var(--rule); border-radius: 6px; }
+  code { background: var(--cell); padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  p > em:only-child { display: block; font-size: 13px; color: var(--gray); text-align: center; margin: -8px auto 18px; max-width: 720px; }
+  body > p:first-of-type em:only-child { color: var(--gray); }
+  h2:first-of-type { margin-top: 22px; }
+  .nav { background: var(--cell); border-left: 3px solid var(--navy); padding: 10px 14px; margin: 0 0 24px; font-size: 13.5px; }
+  .nav a { margin-right: 14px; }
+  .nav strong { display: inline-block; margin-right: 10px; }
+  .doc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+  }
+  .doc-card {
+    border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px;
+    background: white;
+  }
+  .doc-card h3 { margin-top: 0; }
+  .doc-card .meta { color: var(--gray); font-size: 12.5px; margin-top: 4px; }
+  .doc-card a.title { font-size: 17px; color: var(--navy); border-bottom: none; font-weight: 700; }
+  .doc-card a.title:hover { color: var(--teal); }
+  .doc-card .desc { margin: 8px 0 0; font-size: 14px; color: #2a3744; }
+  .download-row {
+    background: var(--cell); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-size: 14px;
+  }
+  .footer { color: var(--gray); font-size: 12.5px; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); }
+</style>
+
+</head>
+<body>
+<div class="nav">
+<strong>WDAY pitch:</strong>
+<a href="index.html">Home</a>
+<a href="tearsheet.html">Tearsheet</a>
+<a href="brief.html">Brief</a>
+<a href="addendum.html">Addendum</a>
+<a href="assumptions.html">Assumptions</a>
+<a href="ic_qa.html">IC Q&amp;A</a>
+<a href="WDAY_Model.xlsx">Excel model</a>
+</div>
+<h1>WDAY — Workday Inc. | Long, 3% starter | 5-10yr hold</h1>
+<p><strong>Price $129.34 | Mkt Cap $33.24B | EV $31.62B | FY26 Rev $9.55B | FY26 FCF $2.78B</strong>
+<em>JAOD, May 19, 2026.</em></p>
+<p><strong>Thesis (bumper-sticker):</strong> Market prices a third outcome no model supports — Workday loses the AI franchise AND fails to pivot to cash. The cash math works in both real branches; $129 is a five-year low against a base that grew revenue 13% and AI ARR from ~zero to $400M+ in one year.</p>
+<hr />
+<h2>Why we own it</h2>
+<ul>
+<li><strong>Contracts are the floor.</strong> $28.1B subscription backlog (~3yrs revenue), 97% gross retention, 65% of F500 wired in. Even in What Goes Wrong (rev −7%/yr), FY30 FCF/sh holds at $10.30 and share count drops 268M → 215M.</li>
+<li><strong>AI is landing, not failing.</strong> $400M+ AI ARR (+100% YoY), 12 agents at GA with 400+ customers, 1.7B AI actions FY26, Sana acquired and shipped to GA in 4 months (fastest in company history).</li>
+<li><strong>Bhusri's return is a Good-AI signal, not a regression.</strong> Board paid $1.25M base + 200% bonus + large equity to bring the founder back. Boards do that when the bet is strategic, not when the operator playbook needs tightening. GTM team intact (Enslin/Rowe/Kazmaier).</li>
+<li><strong>Integration economics flip in Workday's favor.</strong> PS revenue declined nominally ($728M → $719M) while customers grew 8% — AI code-gen drops 12-18mo deployments to ~6mo, opening the 10K-EE mid-enterprise tier that couldn't justify the prior $20M cutover cost.</li>
+</ul>
+<h2>The math</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Probability-weighted TSR (4yr, FY30)</td>
+<td><strong>+151% / 18% IRR</strong></td>
+</tr>
+<tr>
+<td>20-year bottoms-up DCF intrinsic value</td>
+<td><strong>$215/sh (+67% from $129)</strong></td>
+</tr>
+<tr>
+<td>FY29 3-yr prob-weighted TSR</td>
+<td><strong>+117%</strong></td>
+</tr>
+<tr>
+<td>Implied EV / FY28 forward revenue</td>
+<td><strong>~2.5×</strong> (vs mature SaaS 4-6×)</td>
+</tr>
+</tbody>
+</table>
+<p>DCF is owner-FCF (FCF less SBC), 10% WACC, no peer-multiple judgment. Lens A (CG 8-yr normalized earnings) brackets the upside at $580-840/sh pre-buyback.</p>
+<h2>Scenarios (4-year, FY30 terminal)</h2>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Prob</th>
+<th>Terminal $/sh</th>
+<th>Cum div $/sh</th>
+<th>TSR</th>
+<th>IRR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Good AI</td>
+<td>35%</td>
+<td>$545</td>
+<td>$0</td>
+<td>+321%</td>
+<td>43%</td>
+</tr>
+<tr>
+<td>Runs For Cash</td>
+<td>35%</td>
+<td>$261</td>
+<td>$15</td>
+<td>+113%</td>
+<td>21%</td>
+</tr>
+<tr>
+<td>What Goes Wrong</td>
+<td>30%</td>
+<td>$112</td>
+<td>$11</td>
+<td>−5%</td>
+<td>−1%</td>
+</tr>
+<tr>
+<td><strong>Probability-weighted</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>+151%</strong></td>
+<td><strong>18%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Hard-bear stress ($55-75) sits at ~10% folded inside the 30% WGW weight.</p>
+<h2>What would kill the trade</h2>
+<ul>
+<li><strong>Gross revenue retention sustains below 95% for two consecutive quarters</strong> (today 97%) — the disruption signal.</li>
+<li><strong>Microsoft acquires Dayforce/ADP or ships a Copilot HCM SKU under $25/seat.</strong> Threat is 15-20%, not 10%. Self-Service Agent (May 13, 2026) is the front-door tell.</li>
+<li><strong>AI ARR growth decelerates below 50% YoY for two quarters</strong> (today &gt;100%).</li>
+<li><strong>FAD 2026 passes with no sales-force comp redesign.</strong> Without it, Flex Credits adoption stalls at 3-5% of new bookings by FY28 and the per-seat repricing risk compounds.</li>
+</ul>
+<h2>Timeline</h2>
+<ul>
+<li><strong>May 21, 2026</strong> — Q1 FY27 print (first Bhusri quarter). Bull tell: AI ARR run-rate &gt;$500M. Bear tell: sub growth &lt;12%.</li>
+<li><strong>Aug 2026</strong> — Q2 FY27 print. Watch AI ARR &gt;$600M and NRR commentary tone.</li>
+<li><strong>Sept 2026 — FAD 2026</strong> (Bhusri's first as returned CEO). Binary: sales-comp redesign for consumption pricing yes/no. The single most diagnostic event on the calendar.</li>
+<li><strong>Feb 2027</strong> — Q4 FY27 print, first full year with Agent SoR live. Watch gross retention and headcount-clause repricing flags in MD&amp;A.</li>
+</ul>
+<hr />
+<p><em>Disclaimer: Author has spoken with investors who own this stock but has not discussed it with anyone invested in the past 6 months.</em></p>
+<p><em>Full brief: <code>WDAY_BRIEF.md</code>. Addendum: <code>WDAY_BRIEF_ADDENDUM.md</code>. Model: <code>WDAY_Model.xlsx</code>.</em></p>
+<div class="footer">JAOD &amp; (mainly) Claude · May 20, 2026 · <a href="index.html">Home</a></div>
+</body>
+</html>

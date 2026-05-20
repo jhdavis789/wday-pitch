@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WDAY IC meeting Q&A simulation</title>
+
+<style>
+  :root {
+    --navy:    #00294b;
+    --navy2:   #003a66;
+    --teal:    #007e6c;
+    --magenta: #a6256e;
+    --gray:    #44525c;
+    --bg:      #fbfcfd;
+    --rule:    #d8dde2;
+    --cell:    #f3f5f7;
+  }
+  html { background: #eef0f3; }
+  body {
+    max-width: 880px;
+    margin: 24px auto;
+    padding: 40px 48px 60px;
+    background: var(--bg);
+    color: #1a2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.55;
+    box-shadow: 0 4px 24px rgba(0,41,75,.10);
+  }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 30px; color: var(--navy); margin: 0 0 4px; font-weight: 700; line-height: 1.15; }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 22px; color: var(--navy); margin: 36px 0 10px; font-weight: 700; border-bottom: 2px solid var(--navy); padding-bottom: 6px; }
+  h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; color: var(--navy2); margin: 22px 0 6px; font-weight: 600; }
+  p  { margin: 8px 0 12px; }
+  strong { color: var(--navy); }
+  em { color: var(--gray); }
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--navy); }
+  a:hover { color: var(--teal); border-bottom-style: solid; }
+  ul, ol { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 4px; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
+  table { border-collapse: collapse; margin: 14px 0 18px; width: 100%; font-size: 13.5px; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: var(--navy); color: white; font-weight: 600; }
+  tr:nth-child(even) td { background: var(--cell); }
+  blockquote { border-left: 3px solid var(--teal); margin: 10px 0; padding: 4px 14px; color: var(--gray); }
+  img { max-width: 100%; height: auto; display: block; margin: 14px auto; border: 1px solid var(--rule); border-radius: 6px; }
+  code { background: var(--cell); padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  p > em:only-child { display: block; font-size: 13px; color: var(--gray); text-align: center; margin: -8px auto 18px; max-width: 720px; }
+  body > p:first-of-type em:only-child { color: var(--gray); }
+  h2:first-of-type { margin-top: 22px; }
+  .nav { background: var(--cell); border-left: 3px solid var(--navy); padding: 10px 14px; margin: 0 0 24px; font-size: 13.5px; }
+  .nav a { margin-right: 14px; }
+  .nav strong { display: inline-block; margin-right: 10px; }
+  .doc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+  }
+  .doc-card {
+    border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px;
+    background: white;
+  }
+  .doc-card h3 { margin-top: 0; }
+  .doc-card .meta { color: var(--gray); font-size: 12.5px; margin-top: 4px; }
+  .doc-card a.title { font-size: 17px; color: var(--navy); border-bottom: none; font-weight: 700; }
+  .doc-card a.title:hover { color: var(--teal); }
+  .doc-card .desc { margin: 8px 0 0; font-size: 14px; color: #2a3744; }
+  .download-row {
+    background: var(--cell); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-size: 14px;
+  }
+  .footer { color: var(--gray); font-size: 12.5px; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); }
+</style>
+
+</head>
+<body>
+<div class="nav">
+<strong>WDAY pitch:</strong>
+<a href="index.html">Home</a>
+<a href="tearsheet.html">Tearsheet</a>
+<a href="brief.html">Brief</a>
+<a href="addendum.html">Addendum</a>
+<a href="assumptions.html">Assumptions</a>
+<a href="ic_qa.html">IC Q&amp;A</a>
+<a href="WDAY_Model.xlsx">Excel model</a>
+</div>
+<h1>Workday (WDAY) — Capital Group IC Meeting Simulation</h1>
+<p><em>Long, 3% starter, 5-10yr hold. Analyst: JAOD. Date: May 19, 2026.</em>
+<em>Room: six PMs running independent sleeves under the Capital System. Each funds the position separately or doesn't.</em></p>
+<hr />
+<h2>Opening 60 seconds (analyst, verbatim)</h2>
+<p>"Workday is at a five-year low — $129, $33B market cap. The stock is down 47% in twelve months while revenue grew 13%, F500 penetration moved from 60% to 65%, and AI ARR went from roughly zero to $400 million growing 100% year-over-year. Twelve agents shipped to general availability. Sana closed in November and was GA by March 17 — four months, faster than any prior Workday acquisition. The price is telling you something the disclosures aren't.</p>
+<p>What the price implies is a third state of the world: Workday loses the AI franchise AND fails to pivot to cash. Both of the actual branches pay. The 20-year DCF on owner-FCF — that is FCF less stock-based comp — at a 10% WACC lands at $215 a share probability-weighted. Worst regular case is minus 5% TSR over four years with $11 of cumulative dividends. Median is plus 113%. The Good-AI tail is plus 321%.</p>
+<p>I'm not asking you to believe AI wins. I'm asking you to take the other side of 'both branches break,' and to do it at a 3% size because Bhusri's return is a real binary, SBC compression is load-bearing, and Microsoft is a 15-20% probability, not 10%. The position pays you $11 a share while you wait for Q1 print on May 21, FAD in September, and the sales-comp redesign that's the single most diagnostic event on the calendar. I'll take questions."</p>
+<hr />
+<h2>Q&amp;A</h2>
+<p><strong>Casey (Growth PM):</strong> I want to start with AI ARR. You're telling me $400M growing 100% on a $9.5B base. That's 4% of revenue. Help me understand why this isn't another SAP-Joule story where the headline number is real but the trajectory dies at $800M because the install base is already saturated on attach. Where does the next $2B of AI ARR actually come from in line items I can check?</p>
+<p><strong>Analyst:</strong> Three stacks. First, the twelve agents currently at GA — 400+ customers using them today at sub-15% paid-attach, mostly bundled. Even at flat per-customer ACV, attach moving to 50% over three years across 11,500 customers is roughly $1.5B of incremental ARR. Second, Flex Credits consumption — management's own cadence is "second-half FY27 motion, ratably recognized thereafter," so the FY28 revenue contribution is real but small, FY29 onward it compounds. Third, the Contribution Graph — agent cost attribution as a category Workday defines because nobody else has the HR ledger, the AP feed, and the agent registry in one tenant. That's the $1B+ ARR product, and it ships only with Agent SoR live, which is FY27. Five-year stack is $9-12B of incremental AI ARR on a $9.5B base. The May 21 print is the live tell on whether the run-rate is tracking — consensus is $450-500M, bull tell is &gt;$520M.</p>
+<p><strong>Weakness:</strong> The Contribution Graph is a hypothesis with zero shipped revenue. Casey will mark the $1B line as analyst optimism until there's a product page and a customer.</p>
+<hr />
+<p><strong>Casey (Growth PM):</strong> Stay on TAM. You said integration economics flip — AI code-gen cuts 18-month deploys to six months, opens the 10K-EE tier. That's an analyst story. What's the bottoms-up: how many 10K-EE companies aren't on Workday today, and what's the realistic capture rate over five years?</p>
+<p><strong>Analyst:</strong> Roughly 4,500 US companies in the 5K-20K EE band. Workday's penetration there is sub-30%, call it 1,200 customers. The deployment-cost objection — $20M of Accenture time over 12-18 months — was the binding constraint; it's not the only one, but it's the largest. Cut that to $8-12M over six months via Build + Flowise + partner AI code-gen, and the IRR on a Workday cutover at a 12K-EE customer flips positive at year three instead of year six. Realistic capture: 500-700 new logos in that band over five years at $1.2M average ACV, so $600-840M of incremental subscription. Smaller than the AI ARR stack, but it's the line item that validates the FY28 falsification test in the brief — subscription growth back to 17-18% or another 5-8% nominal PS decline. Either one and the Phase 3 thesis lives.</p>
+<p><strong>Weakness:</strong> The Phase 3 thesis depends on one year of services-revenue compression (FY26, $728M to $719M) — Casey is right that one data point isn't a pattern.</p>
+<hr />
+<p><strong>Marcus (Value PM):</strong> Owner-FCF. You said $1.15B on a $33B market cap, which is 28× — not the 12× the sell-side prints. Why is your number right and theirs wrong, and what is the right multiple on a business with 17% SBC and a dual-class structure with no sunset?</p>
+<p><strong>Analyst:</strong> The sell-side number uses reported FCF, which doesn't deduct stock-based comp. SBC is real economic dilution — at $1.63B per year, it's the second-largest cost item after S&amp;M. Owner-FCF is the Buffett frame: FCF less SBC. On that number Workday is 28× today. The right multiple depends on where SBC settles. At 10% of revenue by FY30 — which is plausible because revenue growth outpaces SBC dollar growth, not heroic — owner-FCF in Runs For Cash is $3.4B and the multiple at $261 terminal is 16×. That's between mature SAP at 22-26× and Adobe at 12×. The dual-class is a permanent governance discount of maybe 10-15% on the multiple — Ackman's $95 target is exactly that haircut applied. The thesis doesn't fight it; the 3% size honors it.</p>
+<p><strong>Weakness:</strong> Marcus will note that "10% SBC by FY30" has no clean precedent at growth-SaaS scale in a four-year window. The brief admits this.</p>
+<hr />
+<p><strong>Marcus (Value PM):</strong> Margin of safety. Buffett's investor proxy in your stress test wants $70. You're at $129. That's an 80% premium over what one of your six benchmark investors thinks is fair. Why isn't the right discipline to wait for $70-95 — Ackman's number — instead of paying full freight on a thesis where four of six benchmark investors have material concerns?</p>
+<p><strong>Analyst:</strong> Buffett's $70 is a 50% margin-of-safety demand applied to a multi-class structure — it's a governance number, not a primitives number. Ackman's $95 with a dual-class sunset is the same. Neither is a disagreement about cash flows. The cash-flow disagreement is Smith's — he wants SBC compression first — and Wood's, which is Wright's Law on the install base. The 20-year DCF on primitives lands at $215 probability-weighted. The downside protection isn't margin-of-safety on multiple, it's the $11/sh of cumulative dividends in the worst regular case and the 74% contractually-firm portion of the backlog. If you want $95 you can scale in there, but the trade pays you at $129 because the bounded-uncertainty math holds.</p>
+<p><strong>Weakness:</strong> Two of the six investors are unconditional buyers (Druck, Marks, both at starter size). That is exactly a 3% starter, not a conviction call.</p>
+<hr />
+<p><strong>Marcus (Value PM):</strong> One more — buyback math in What Goes Wrong. You said share count goes from 268M to 215M, a 20% reduction, at "well below $130 average price." If the stock is in WGW you're buying back near $100. That's $2-3B a year at full capital deployment. Where does management's track record say they'll actually execute that pace? Workday has historically been a token buyback story.</p>
+<p><strong>Analyst:</strong> Fair. FY26 buyback was $700M against $2.78B of FCF — 25% deployment ratio, which is low. The thesis assumes management lifts that to 60-70% in the cash branches, which requires Bhusri or a COO publicly committing at FAD 2026. Without that commitment, the share-count reduction is 8-10%, not 20%, and the WGW per-share number drops from $10.30 to roughly $8.20. The terminal price falls to roughly $95 instead of $112, and the WGW TSR goes from -5% to -18%. The probability-weighted IRR drops from 18% to about 13%. The trade still clears a long-only hurdle but the cushion is gone.</p>
+<p><strong>Weakness:</strong> "Bhusri publicly commits to 60-70% capital return" is the most unfounded line in the bull case. Founder-product CEOs don't usually pivot to capital return frameworks.</p>
+<hr />
+<p><strong>Ingrid (International PM):</strong> Ireland. The 10-K shows long-lived assets in Ireland jumped from $215M to $531M, up 147%. That's the biggest EMEA capex signal in Workday's history. But the international revenue line has been flat at roughly 25% of total for six years. What does the Ireland spend buy you if EMEA growth doesn't show up in the next two prints?</p>
+<p><strong>Analyst:</strong> Ireland is the EU AI Act compliance build and the regional data-residency engine for the post-GDPR enterprise. The June 7 2026 EU Pay Transparency Directive is mandatory for any company over 100 employees operating in the EU — that's a compliance product Workday is the only F500 vendor positioned to ship at scale because pay equity sits in the HR ledger. The $300-600M ARR window I cited in the brief is structurally EMEA-weighted. If EMEA revenue is still flat in two prints, the bull case on that specific product line dies. But the Ireland capex isn't speculative — it's compliance infrastructure that monetizes whether or not EMEA grows, because US multinationals operating in Europe consume it from the US contract.</p>
+<p><strong>Weakness:</strong> Six years of flat international growth is a real signal that Workday's GTM doesn't translate outside North America. The thesis doesn't depend on EMEA accelerating, but Ingrid will discount the Pay Transparency story until she sees the EMEA line move.</p>
+<hr />
+<p><strong>Ingrid (International PM):</strong> FX and the multi-country payroll moat — you keep saying "23-country payroll" as if it's a defensive number. But ADP runs payroll in 140 countries and Deel runs it in 150+. Why is 23 the right metric?</p>
+<p><strong>Analyst:</strong> 23 is Workday's native payroll engine — not partnered, not reseller. ADP's "140 countries" is the aggregator number including local-partner payrolls; their native engines are roughly 20. Deel is contractor and EOR payroll, which is a different product from W-2 payroll at scale; their F500 attach for payroll-of-record is functionally zero. The relevant comp for Workday is SAP SuccessFactors (similar native count) and Oracle Fusion (lower). Where the moat lives isn't country count, it's the depth in each country — France CSE works-council, Germany Betriebsrat, Japan year-end adjustment — and the SOX 404 audit trail that travels with it. AI-natives replicate breadth before depth, and the breadth-to-depth gap is where 18-month deploys come from.</p>
+<p><strong>Weakness:</strong> Workday's actual disclosed native-country payroll list is shorter than 23 in the audited filings; the analyst is using management commentary. Ingrid will check.</p>
+<hr />
+<p><strong>Tom (Skeptic PM):</strong> Bhusri. Your brief has a 60/40 bullish-stabilizer split. Your own founder-return base rate is one-in-four home runs, one-in-two stabilizers, one-in-four regressions. So your prior should be 25% home run. You moved it to 60%. What specific evidence pushes Bhusri from the base rate into the bullish quartile?</p>
+<p><strong>Analyst:</strong> Four things, and I'll say which I think is loose. One — compensation structure: $1.25M base, 200% target bonus, large equity grant. Schultz II and Dorsey were severance-equivalent; this is a strategic-conviction package. Two — Bhusri shifted from Executive Chair, not retirement. He was already in the building, knew the product roadmap, didn't need a six-month onboarding. Three — the GTM team is intact: Enslin, Rowe, Kazmaier all stayed. That's the Apple 1997 pattern, not the Twitter 2015 pattern. Four — first-tenure execution: zero to $5B revenue. The loose one is the comp package — boards pay strategic conviction packages even when they're wrong. I'd defend 50/50 honestly; 60/40 is the bull-leaning end of the defensible range. The brief says that.</p>
+<p><strong>Weakness:</strong> Tom will note the analyst just walked the 60/40 to 50/50 under questioning. That re-rates the probability-weighted IRR from 18% to roughly 15%. The thesis still clears, but it's a slimmer margin.</p>
+<hr />
+<p><strong>Tom (Skeptic PM):</strong> Microsoft. You say 15-20% probability — your kill switch is a Copilot HR SKU under $25 or a Dayforce acquisition. Dayforce trades at $7B EV. Microsoft's cash position is $90B+. That's not even a rounding error; that's a tip. Why isn't this 30-40%?</p>
+<p><strong>Analyst:</strong> Microsoft's historical pattern in HCM and ERP is partner, not own. Dynamics never seriously contested SAP/Oracle ERP. LinkedIn never bolted into a payroll engine in nine years of ownership. Copilot's HR agents at Ignite 2025 are augmentation features — Workforce Insights, Employee Self-Service Agent, LinkedIn Hiring Assistant — none of which is a payroll engine. The 5+ year build to a credible multi-country payroll engine is what caps the probability, and the Dayforce acquisition would compress that to 18-24 months but requires Microsoft to break a decade of "we don't own vertical applications" discipline. 15-20% is the probability they break that pattern; 30-40% would require evidence they're already breaking it, and I don't have that evidence. Self-Service Agent on May 13 is the front-door tell — if employees stop opening Workday's UI, the SoR argument compresses to "the integration we pay for." That's the live monitorable.</p>
+<p><strong>Weakness:</strong> Tom will say "absence of evidence isn't evidence of absence" and that Microsoft's pattern can break at any Ignite. The thesis has no hedge against a $7B Dayforce acquisition announcement.</p>
+<hr />
+<p><strong>Tom (Skeptic PM):</strong> Why now. The stock has been bad for twelve months and every catalyst has come and gone without lifting the price. Bhusri returned in February. Sana shipped in March. The a16z piece dropped April 28. None of it moved the stock. Name the specific catalyst in the next 90 days that closes the gap, not "AI ARR will compound."</p>
+<p><strong>Analyst:</strong> Q1 FY27 prints May 21 — Wednesday. That's two days from now. AI ARR run-rate disclosure is the live tell. Consensus is between $450 and $500M; a print at $520M+ at run-rate is the first hard data point post-restructuring and the first Bhusri quarter. That's the 90-day catalyst. If May 21 misses — AI ARR under $470M, subscription growth under 12% — the bull case on near-term re-rating dies and the trade becomes a 4-year capital-return story, not a near-term move. I'm not pricing in May 21 success; I'm sizing 3% so that if it misses, we hold and add on weakness toward $105.</p>
+<p><strong>Weakness:</strong> Tom will say "if you're not pricing in May 21, why are we taking the meeting two days before it?" The answer is the IC has to vote so cash is available, but Tom will discount it.</p>
+<hr />
+<p><strong>Tom (Skeptic PM):</strong> Dual-class. Bhusri controls voting via Class B. There's no sunset. Ackman's stress test in your own brief says he wants a sunset before he'd take a position. What's the realistic path to dual-class collapse, and if there isn't one, why doesn't the governance discount permanently cap the multiple?</p>
+<p><strong>Analyst:</strong> The realistic path is sunset on Bhusri's death or incapacity — that's the structural floor for Workday-like dual-class collapses. Bhusri is 60. The actuarial expected sunset is 20+ years out, so the governance discount is permanent for any IC horizon under that. The thesis doesn't fight it. Ackman's $95 is a 25% governance haircut on the $129 multiple, and the right way to think about it is that 25% is roughly already in the price — Workday traded at $300+ in 2024 when the dual-class structure was the same. The current discount to $215 intrinsic value includes the governance haircut. The multiple cap isn't from dual-class, it's from SBC and AI uncertainty.</p>
+<p><strong>Weakness:</strong> "Already in the price" is the kind of claim that's unfalsifiable. Tom will mark it.</p>
+<hr />
+<p><strong>Linda (Macro PM):</strong> Rate environment. We're at 4.5% on the long end. SaaS multiples have compressed 30-40% in the past three years because of duration risk. Your 10% WACC bakes in a normalized rate environment that may not return for years. Re-cut the DCF at 12% WACC — what does intrinsic value look like if rates stay where they are?</p>
+<p><strong>Analyst:</strong> 12% WACC takes the probability-weighted PWIV from $215 to roughly $170. The upside-to-downside ratio compresses from 1.7-to-1 to 1.3-to-1, and the IRR drops from 18% to about 13%. The trade still clears a long-only hurdle but with materially less cushion. Where I'd push back is that the right WACC isn't a function of the risk-free rate alone — it's the risk-free rate plus the equity risk premium plus a single-stock idiosyncratic adder. The single-stock idiosyncratic risk has come down as the backlog and AI ARR disclosures have hardened. So 10% remains defensible. 12% is the bear-case WACC and the football field still works there.</p>
+<p><strong>Weakness:</strong> Linda will note that "risk-adjusted, my single-stock idiosyncratic has come down" is an assertion the analyst is making against a 47% drawdown in twelve months. The market is voting differently.</p>
+<hr />
+<p><strong>Linda (Macro PM):</strong> Recession. If 2027 is a real recession — F500 hiring freezes, headcount cuts of 5-10% — what does headcount-clause repricing do to the backlog? The 10-K already says "reduced growth in headcount-level commitments upon renewals" in a benign macro. Re-cut.</p>
+<p><strong>Analyst:</strong> In a 2027 recession with F500 headcount down 7-8%, the headcount-clause mechanic does two things. First, in-contract: most Workday contracts have asymmetric headcount clauses — true-up on the way up, partial protection on the way down with floors at 80-85% of contracted seats. So a customer cutting 8% of headcount typically pays for at least 92% of contracted ARR through current term-end. Second, at renewal: the customer renegotiates at the lower seat count, which is the genuine repricing risk. The cohort at renewal in any given year is roughly 30-35% of the install base. So a one-year recession compresses renewal-cohort revenue by maybe 5-8% of that 30% — call it 2% of total subscription. That's roughly what the FY26 disclosure language is already pointing at in a benign macro. The recession version is 4-5% drag, which is inside the WGW model's -7%/yr revenue assumption.</p>
+<p><strong>Weakness:</strong> Linda will note that 80-85% seat floors are not contractually disclosed; the analyst is using channel-check commentary. The actual contract floor distribution could be lower.</p>
+<hr />
+<p><strong>Linda (Macro PM):</strong> Last one. If the Fed cuts hard — 200bps over 18 months — and SaaS multiples re-expand, doesn't a passive long-only ETF on the QQQ outperform this single name? You're asking me to take single-stock risk for what looks like a 400-700bp premium over the index. That math doesn't justify the dispersion of outcomes.</p>
+<p><strong>Analyst:</strong> The probability-weighted 10-year IRR on WDAY is roughly 13-16%. S&amp;P expected return is 8-10%. The premium is 400-700bps on the central case. Where it gets interesting is the dispersion — the Good-AI tail is 25-27% 10-year IRR, which is the entire reason for owning single names. If you don't believe in the tail, you're right that QQQ is the better trade. The Good-AI tail is 35% probability and depends on the AI ARR trajectory holding and the Contribution Graph shipping. Both are checkable in the next 18-24 months. So the honest framing is: take a 3% starter because the tail is real and checkable, and if the May 21 print confirms it, size up to 5%; if it doesn't, the trade is a 4-year capital-return name and you can stay at 3% or trim.</p>
+<p><strong>Weakness:</strong> Linda will mark this as "marginal-case sizing" — the kind of name that ends up at 3% forever and contributes to index-hugging book composition.</p>
+<hr />
+<p><strong>Sarah (Junior PM):</strong> Flex Credits. Walk me through what this actually is for a customer. A 30K-EE customer signs a Workday contract today — how does Flex Credits show up on their invoice, what do they consume, and what's the price per consumed unit?</p>
+<p><strong>Analyst:</strong> A 30K-EE customer's contract today is per-employee-per-month per module — call it $30 PEPM blended, so roughly $11M ACV. Under Flex Credits, the customer gets a baseline allowance of credits — call it 50M credits a year, included — and pays per credit above that, roughly $0.001 per credit. A "credit" is consumed by AI actions: a Sana query, an agent workflow run, a recruiting screen, a contract review. The customer's CFO sees one line for subscription and one line for consumption — like an AWS bill. The 50 named customers on Flex Credits as of February are Accenture, Nike, Merck and 47 others mostly in the F500 band. They're consuming an average of roughly 80M credits a year against the 50M baseline, so the consumption overage is small but real and growing 30%+ quarter-over-quarter.</p>
+<p><strong>Weakness:</strong> Sarah will ask whether $0.001 per credit is a disclosed number. It isn't — it's a channel estimate. The actual unit economics aren't in the 10-K.</p>
+<hr />
+<p><strong>Sarah (Junior PM):</strong> Customer experience. If I'm an employee at a 30K-EE Workday customer, what does my day actually look like in 2027 with all this AI? Do I still log into Workday? Is the UI different? Does my manager interact with it differently?</p>
+<p><strong>Analyst:</strong> In 2027 with Sana fully deployed, an employee opens a chat bar — that's Sana — and types "I need to take three days off next week." Sana reads the leave balance, reads the manager's calendar, reads the team coverage, fires the request, and confirms. The employee never sees the Workday UI. A manager opens Sana and asks "who on my team is at risk of leaving in the next six months" — Sana queries the org graph copilot, reads the engagement scores, the comp benchmarks, the manager-skip patterns, and returns a ranked list with recommended interventions. The manager never opens the Workday UI either. Workday becomes the system of record under the chat surface — exactly the structural risk if Microsoft Copilot becomes the chat surface instead of Sana. Whoever owns the chat surface in 2027 owns the relationship; Workday is betting Sana is that surface.</p>
+<p><strong>Weakness:</strong> Sarah will note that this is the structural Microsoft risk in plain English — and the analyst just admitted whoever owns the chat surface wins.</p>
+<hr />
+<p><strong>Sarah (Junior PM):</strong> Management skin in the game. Bhusri got an equity grant in February. What does insider ownership actually look like now — is he aligned with us, or is he writing himself fresh equity from a low base while we're underwater?</p>
+<p><strong>Analyst:</strong> Bhusri's total Class A+B economic ownership pre-grant was roughly 3.2% of shares outstanding. The February grant adds approximately 0.4% on a fully-diluted basis. He's the largest individual holder. The grant vests over four years with performance conditions tied to AI ARR milestones and total shareholder return — not just tenure. Eschenbach exited with vested equity intact but no new grants. Insider buying since February: Bhusri purchased $5M of stock on the open market in late February post-return, which is a real signal — founders don't typically need to buy more of their own company unless they want to send one. Other insiders: Rowe (CFO) bought $500K, Enslin (CCO) bought $1M. The insider buying cluster is the cleanest alignment signal in the brief and I should have led with it.</p>
+<p><strong>Weakness:</strong> Sarah will ask why insider buying didn't make the brief's executive summary. The honest answer is the analyst missed it as a top-line point.</p>
+<hr />
+<h2>Closing 60 seconds (analyst, verbatim)</h2>
+<p>"Three things to take with you. One — the trade isn't a directional bet on AI winning. It's the other side of 'both branches break,' and the cash math holds in the cash branch with $11 of dividends, 74% firm backlog, and a $112 terminal that requires SBC compression we can monitor at FAD in September. Two — the size is 3% because there are two binaries I can't model out: Bhusri's a product CEO not a knife-fighter, and Microsoft is a 15-20% risk not 10%. At 5% the binaries dominate; at 1% the upside is uncollectable; 3% is the saddle point. Three — May 21 is in two days. AI ARR run-rate above $520 million is the bull tell. Below $470M and we hold at 3% as a capital-return name and wait for FAD. The trade doesn't need conviction on AI; it needs cash to be available when the disclosure cadence either confirms or breaks the thesis over the next four prints. I'd ask for a 3% allocation, scaled in over 90 days, with a re-vote after FAD 2026 in September."</p>
+<hr />
+<h2>The IC verdict</h2>
+<p><strong>Likely outcome: split decision, with most PMs funding a smaller-than-pitched position.</strong></p>
+<ul>
+<li><strong>Casey (Growth):</strong> Funds 2-3%. Buys the AI ARR trajectory and the Contribution Graph option. Wants the May 21 print before sizing up.</li>
+<li><strong>Marcus (Value):</strong> Funds 1% or passes. The owner-FCF multiple at 28× plus the dual-class structure plus the heroic SBC compression assumption is three strikes. Will revisit at $95-105 or after FAD 2026 ships a sales-comp redesign.</li>
+<li><strong>Ingrid (International):</strong> Passes for now. Six years of flat international revenue against a $300M+ Ireland capex line is a missing-trend pattern. Will revisit if EMEA prints accelerate in Q2 or Q3.</li>
+<li><strong>Tom (Skeptic):</strong> Passes. The Bhusri 50/50 walk-back under questioning plus the Microsoft 15-20% probability plus the absence of a 90-day catalyst beyond a print two days away is a no-vote until FAD 2026.</li>
+<li><strong>Linda (Macro):</strong> Funds 1-2% as a starter. The 12% WACC stress still clears a long-only hurdle and the dispersion is positively skewed. Doesn't want to overweight until rates clarify.</li>
+<li><strong>Sarah (Junior):</strong> Doesn't have funding discretion but would fund 2%. The insider-buying cluster and the Sana customer-experience story are her two anchors; the Microsoft chat-surface risk is her one structural concern.</li>
+</ul>
+<p><strong>Net firm position: roughly 1.5-2% blended across the six sleeves, against a 3% pitch.</strong> Watchlist conditions on the remaining 1-1.5%:</p>
+<ol>
+<li><strong>Q1 FY27 print May 21:</strong> AI ARR run-rate above $520M and subscription growth above 12% triggers re-vote for sizing up.</li>
+<li><strong>FAD 2026 September:</strong> Sales-comp redesign for consumption pricing announced; SBC glide path explicitly committed; buyback acceleration to $2B+ annual run-rate. Three-of-three triggers full sizing across passing sleeves; two-of-three holds at current weight; one-of-three or zero triggers cuts.</li>
+<li><strong>No Microsoft Dayforce/ADP move and no F500 logo loss in trailing six months at re-vote.</strong></li>
+</ol>
+<p>The trade is alive but undersized relative to the analyst's framing. The interrogation surfaced three real concessions — the 60/40 Bhusri walking to 50/50, the buyback execution risk pulling WGW TSR from -5% to -18%, and the same-store seat growth approximately zero — that don't kill the position but materially compress the asymmetry the brief asserts. The room agrees this is a defensible 3% starter in principle; in practice, with each PM funding independently, it lands closer to 2% with a hard re-vote in September.</p>
+<div class="footer">JAOD &amp; (mainly) Claude · May 20, 2026 · <a href="index.html">Home</a></div>
+</body>
+</html>

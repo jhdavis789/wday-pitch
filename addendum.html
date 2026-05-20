@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WDAY addendum — revenue mix, SBC, attach</title>
+
+<style>
+  :root {
+    --navy:    #00294b;
+    --navy2:   #003a66;
+    --teal:    #007e6c;
+    --magenta: #a6256e;
+    --gray:    #44525c;
+    --bg:      #fbfcfd;
+    --rule:    #d8dde2;
+    --cell:    #f3f5f7;
+  }
+  html { background: #eef0f3; }
+  body {
+    max-width: 880px;
+    margin: 24px auto;
+    padding: 40px 48px 60px;
+    background: var(--bg);
+    color: #1a2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.55;
+    box-shadow: 0 4px 24px rgba(0,41,75,.10);
+  }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 30px; color: var(--navy); margin: 0 0 4px; font-weight: 700; line-height: 1.15; }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 22px; color: var(--navy); margin: 36px 0 10px; font-weight: 700; border-bottom: 2px solid var(--navy); padding-bottom: 6px; }
+  h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; color: var(--navy2); margin: 22px 0 6px; font-weight: 600; }
+  p  { margin: 8px 0 12px; }
+  strong { color: var(--navy); }
+  em { color: var(--gray); }
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--navy); }
+  a:hover { color: var(--teal); border-bottom-style: solid; }
+  ul, ol { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 4px; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
+  table { border-collapse: collapse; margin: 14px 0 18px; width: 100%; font-size: 13.5px; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: var(--navy); color: white; font-weight: 600; }
+  tr:nth-child(even) td { background: var(--cell); }
+  blockquote { border-left: 3px solid var(--teal); margin: 10px 0; padding: 4px 14px; color: var(--gray); }
+  img { max-width: 100%; height: auto; display: block; margin: 14px auto; border: 1px solid var(--rule); border-radius: 6px; }
+  code { background: var(--cell); padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  p > em:only-child { display: block; font-size: 13px; color: var(--gray); text-align: center; margin: -8px auto 18px; max-width: 720px; }
+  body > p:first-of-type em:only-child { color: var(--gray); }
+  h2:first-of-type { margin-top: 22px; }
+  .nav { background: var(--cell); border-left: 3px solid var(--navy); padding: 10px 14px; margin: 0 0 24px; font-size: 13.5px; }
+  .nav a { margin-right: 14px; }
+  .nav strong { display: inline-block; margin-right: 10px; }
+  .doc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+  }
+  .doc-card {
+    border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px;
+    background: white;
+  }
+  .doc-card h3 { margin-top: 0; }
+  .doc-card .meta { color: var(--gray); font-size: 12.5px; margin-top: 4px; }
+  .doc-card a.title { font-size: 17px; color: var(--navy); border-bottom: none; font-weight: 700; }
+  .doc-card a.title:hover { color: var(--teal); }
+  .doc-card .desc { margin: 8px 0 0; font-size: 14px; color: #2a3744; }
+  .download-row {
+    background: var(--cell); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-size: 14px;
+  }
+  .footer { color: var(--gray); font-size: 12.5px; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); }
+</style>
+
+</head>
+<body>
+<div class="nav">
+<strong>WDAY pitch:</strong>
+<a href="index.html">Home</a>
+<a href="tearsheet.html">Tearsheet</a>
+<a href="brief.html">Brief</a>
+<a href="addendum.html">Addendum</a>
+<a href="assumptions.html">Assumptions</a>
+<a href="ic_qa.html">IC Q&amp;A</a>
+<a href="WDAY_Model.xlsx">Excel model</a>
+</div>
+<h1>Workday (WDAY) — Brief Addendum: Mix, Growth Decomposition, and SBC</h1>
+<p><em>JAOD, May 19, 2026 — companion to WDAY_BRIEF.md. Same voice. Tables-first.</em></p>
+<p>This addendum is the deeper financial work behind the main brief. It does not re-litigate the thesis; it answers four questions a PM will press on after reading the cover. (1) What does the revenue mix actually look like, and where is the gross-margin uplift coming from? (2) Where is the growth coming from — new logos vs. expansion, big vs. small, HCM vs. Financials? (3) How serious is the SBC problem and what would Eschenbach have to commit to in order to close it? (4) Attach rates by SKU — placeholder, see separate research stream.</p>
+<hr />
+<h2>1. Revenue mix — subscription vs professional services</h2>
+<p>Workday reports two revenue lines and two cost-of-revenue lines. The subscription line is the franchise; the professional-services (PS) line is the loss-leader used to fund customer acquisition and partner-channel build. The mix shift between these two — and the gross-margin profile of each — is the most underappreciated source of operating leverage in the next four years, before any opex cuts.</p>
+<p><strong>The forward model</strong>, built into <code>data/deck_data.json</code> under <code>revenue_mix</code>, assumes the following growth scaffolding: subscription +15% / +11% / +8% / +6% FY27→FY30, PS flat / flat / -2% / -2%. Subscription gross margin (GM) expands from 82.7% FY26 to 87.0% FY30 — 430bps of structural lift from scale and from AI-deployment cost absorption that is already paid for. PS GM stays negative but compresses from -9.9% FY26 to +2.0% FY30 as partners take more share of new implementations. Total GM moves from 75.7% FY26 to 82.7% FY30 — <strong>700bps of gross-margin uplift from mix shift alone</strong>, before any S&amp;M or R&amp;D leverage. That is the load-bearing point of this section.</p>
+<table>
+<thead>
+<tr>
+<th>FY</th>
+<th>Subscription $M</th>
+<th>YoY</th>
+<th>PS $M</th>
+<th>YoY</th>
+<th>Total $M</th>
+<th>Sub GM</th>
+<th>PS GM</th>
+<th>Total GM</th>
+<th>Sub GP $M</th>
+<th>PS GP $M</th>
+<th>Total GP $M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY24</td>
+<td>6,603</td>
+<td>—</td>
+<td>656</td>
+<td>—</td>
+<td>7,259</td>
+<td>84.4%</td>
+<td>-12.8%</td>
+<td>75.6%</td>
+<td>5,572</td>
+<td>-84</td>
+<td>5,488</td>
+</tr>
+<tr>
+<td>FY25</td>
+<td>7,718</td>
+<td>+16.9%</td>
+<td>728</td>
+<td>+11.0%</td>
+<td>8,446</td>
+<td>83.6%</td>
+<td>-10.3%</td>
+<td>75.5%</td>
+<td>6,452</td>
+<td>-75</td>
+<td>6,377</td>
+</tr>
+<tr>
+<td>FY26</td>
+<td>8,833</td>
+<td>+14.5%</td>
+<td>719</td>
+<td>-1.2%</td>
+<td>9,552</td>
+<td>82.7%</td>
+<td>-9.9%</td>
+<td>75.7%</td>
+<td>7,302</td>
+<td>-71</td>
+<td>7,231</td>
+</tr>
+<tr>
+<td>FY27e</td>
+<td>10,158</td>
+<td>+15.0%</td>
+<td>719</td>
+<td>0.0%</td>
+<td>10,877</td>
+<td>84.0%</td>
+<td>-7.0%</td>
+<td>78.0%</td>
+<td>8,533</td>
+<td>-50</td>
+<td>8,482</td>
+</tr>
+<tr>
+<td>FY28e</td>
+<td>11,275</td>
+<td>+11.0%</td>
+<td>719</td>
+<td>0.0%</td>
+<td>11,994</td>
+<td>85.0%</td>
+<td>-4.0%</td>
+<td>79.7%</td>
+<td>9,584</td>
+<td>-29</td>
+<td>9,555</td>
+</tr>
+<tr>
+<td>FY29e</td>
+<td>12,177</td>
+<td>+8.0%</td>
+<td>705</td>
+<td>-2.0%</td>
+<td>12,882</td>
+<td>86.0%</td>
+<td>-1.0%</td>
+<td>81.2%</td>
+<td>10,472</td>
+<td>-7</td>
+<td>10,465</td>
+</tr>
+<tr>
+<td>FY30e</td>
+<td>12,908</td>
+<td>+6.0%</td>
+<td>691</td>
+<td>-2.0%</td>
+<td>13,599</td>
+<td>87.0%</td>
+<td>+2.0%</td>
+<td>82.7%</td>
+<td>11,230</td>
+<td>14</td>
+<td>11,243</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>revenue_mix</code> block in <code>data/deck_data.json</code>. Historical FY24–FY26 lines from FY26 10-K Statements of Operations and Note 4 (Disaggregation of Revenue).</em></p>
+<p>A few observations a PM will want to internalize:</p>
+<p><strong>Subscription is already ~92.5% of revenue and rising to ~95%.</strong> Subscription was $8.83B of $9.55B total in FY26 = 92.5%. By FY30 it is $12.91B of $13.60B = 94.9%. The PS line stops being interesting for the model in two years. Workday is functionally a subscription business with a partner-channel investment hanging off it, not a mixed-mode business. Analysts who compare WDAY's gross margin to ORCL or SAP without normalizing for PS drag are mis-measuring it.</p>
+<p><strong>Subscription gross margin reaches Oracle Applications territory by FY30.</strong> Oracle's full-company GAAP GM is ~77%; Oracle's applications-cloud GM (the relevant comp) is in the mid-80s. Salesforce subscription GM is ~84%. The 87% FY30 figure for WDAY is not aggressive — it is <em>modally where mature enterprise SaaS lives</em>. The piece that does work is the cost-of-subscription line: FY26 cost-of-subscription was $1,531M against $8,833M subscription revenue. FY30e cost-of-subscription is $1,678M against $12,908M — i.e., +9.6% cumulative cost growth against +46% subscription revenue growth. That spread is the AI investment cycle running off: GPU contracts get amortized, the marginal cost of agent N+1 on an existing tenant approaches zero, and Sana's training compute is already in the FY26 cost base.</p>
+<p><strong>PS GM is structurally negative — by design, and that is the right strategy.</strong> -10% PS GM looks alarming in isolation. It is not. Workday loses money on PS because it sells implementation services below cost to win logos; the partner ecosystem (Deloitte, Accenture, Kainos, IBM, Cognizant, Alight) takes the bulk of incremental SI revenue and Workday keeps the high-margin subscription dollars that follow. The FY26 10-K language is explicit that PS revenue is "expected to be less than the cost of providing such services for the foreseeable future." The model converges PS to slightly-positive GM by FY30 because the partner share of new implementations rises as Sana-accelerated deployment compresses internal billable hours. If anything, the model's PS GM glide path is conservative — full partner displacement would push it to mid-single-digit positive faster.</p>
+<p><strong>The 700bps GM uplift is mix-shift-driven and almost mechanical.</strong> Hold subscription GM flat at 82.7% FY26 and let the PS share collapse from 7.5% to 5.1% of total revenue — total GM still expands by ~150bps. Let subscription GM expand 430bps as projected — total GM expands by the full ~700bps. The mix-shift component is locked in by the trajectories of the two lines; the subscription-GM expansion is the part that requires execution. Both go the right way.</p>
+<p><strong>Why this matters for the three scenarios.</strong> All three scenarios in the main brief inherit this mix dynamic in subtly different ways. Runs For Cash gets the full 700bps because revenue grows but slows; What Goes Wrong gets even more (because cost of subscription stays roughly flat while subscription revenue declines but at much higher GM per dollar); Good AI gets less GM lift because new AI products (Flex Credits, agents) carry incremental cost-of-subscription as they ramp, but compensates with revenue growth. The PM's intuition that "subscription gross margin will improve no matter what" is roughly correct, and the model bears it out.</p>
+<hr />
+<h2>2. New customers vs expansion / big vs small / HCM vs Financials</h2>
+<p>Where is the growth coming from? Three lenses, each answering a slightly different version of the question. Only the first is directly disclosed; the other two are triangulated and labeled as such.</p>
+<h3>2a. New vs expansion — directly disclosed, trend is unambiguous</h3>
+<p>The FY26 10-K MD&amp;A (subscription revenue discussion, p.39) discloses: "Approximately 60% of the increase in subscription services revenues was attributable to expansion within our customers and acquisitions, and the remaining 40% was attributable to customers added after the beginning of the comparable prior year period." The FY25 10-K disclosed the same metric at 55/45. The FY24 10-K disclosed it at approximately 50/50.</p>
+<table>
+<thead>
+<tr>
+<th>Fiscal Year</th>
+<th>Expansion share of YoY sub growth</th>
+<th>New-logo share</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY24</td>
+<td>~50%</td>
+<td>~50%</td>
+<td>FY24 10-K MD&amp;A</td>
+</tr>
+<tr>
+<td>FY25</td>
+<td>~55%</td>
+<td>~45%</td>
+<td>FY25 10-K MD&amp;A</td>
+</tr>
+<tr>
+<td>FY26</td>
+<td>~60%</td>
+<td>~40%</td>
+<td>FY26 10-K MD&amp;A p.39</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>new_vs_expansion</code> in <code>data/deck_data.json</code>, cross-checked against the as-disclosed text.</em></p>
+<p>The slope matters more than any single year's value. <strong>The expansion share is rising 5 points per year and is now the majority contributor.</strong> This is a maturity signal — the install base is now large enough that incremental dollar of subscription revenue is more likely to come from existing customers than from new logos. Two implications for the thesis:</p>
+<p>First, the AI ARR ramp ($400M FY26 growing &gt;100% YoY) does not require new-logo wins. Illuminate and the 12 GA agents sell into the existing wallet first; the 11,500-customer install base is the addressable market for the next two years of AI ARR growth. The bear story "no one is buying new Workday" misses that the bulk of growth is <em>already</em> not coming from new logos. New logos contribute ~40% of growth, but the install base contributes 60%, and that 60% is where AI sells first.</p>
+<p>Second, the new-logo line is still healthy in absolute terms. New-logo subscription revenue contribution in FY26 = 40% × $1,115M YoY = ~$446M. That is roughly one new mid-size enterprise customer per week ($8–10M ACV apiece). Q4 FY26 named-customer disclosure included Boston Children's Hospital, Copenhagen Airports, Fruit of the Loom, Lavazza, Sargent &amp; Lundy, NY Unified Court System, Queensland University of Technology — mixed enterprise + public-sector. Workday's Gartner-named Leader status for 10 consecutive years and continued F500 penetration lift (&gt;60% → &gt;65%) suggest this rate is sustainable or accelerating.</p>
+<h3>2b. Customer size mix — not disclosed, triangulated from investor-day commentary</h3>
+<p>Workday does not disclose ARR by customer size. The estimates below are triangulated from (i) CFO Zane Rowe's investor-day comments framing the install base as "predominantly large enterprise with growing mid-market traction," (ii) the disclosed customer count (~11,500) against the disclosed F500/F1000 anchor counts (&gt;65% of F500, &gt;50% of F1000), and (iii) industry-source estimates of typical ACV by tier ($8–15M for &gt;3,000 EE, $1.5–4M for 1,000–3,000 EE, &lt;$500K for &lt;1,000 EE).</p>
+<table>
+<thead>
+<tr>
+<th>Customer tier</th>
+<th>~% of FY26 ARR</th>
+<th>Approx growth</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enterprise (&gt;3,000 EE)</td>
+<td>~72%</td>
+<td>~13% YoY</td>
+<td>Mid (triangulated)</td>
+</tr>
+<tr>
+<td>Mid-market (1,000–3,000 EE)</td>
+<td>~23%</td>
+<td>~16% YoY</td>
+<td>Low (triangulated)</td>
+</tr>
+<tr>
+<td>Smaller (&lt;1,000 EE)</td>
+<td>~5%</td>
+<td>~20% YoY</td>
+<td>Low (triangulated)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>customer_size_mix_est</code> in <code>data/deck_data.json</code> — all values are estimates, flagged as such.</em></p>
+<p>The takeaway: <strong>the enterprise tier is the franchise and is still growing 13% YoY.</strong> The faster-growing mid-market and small segments are interesting but small in absolute dollars — at $0.4–0.5B of FY26 ARR for the smaller tier, even 20% growth contributes ~$0.1B incremental. The bear narrative that "AI-natives are eating the SMB market" can be true <em>and</em> immaterial at the same time. Workday's economics live in the enterprise tier, and that tier is where the disclosed F500 displacement wins are happening.</p>
+<h3>2c. HCM vs Financials vs Adaptive — not disclosed, triangulated from public commentary</h3>
+<p>Workday does not break out subscription revenue by product line. Bhusri and Eschenbach have repeatedly framed Financials as "growing meaningfully faster than HCM" without putting a number on it. Sell-side triangulation (Macquarie, Mizuho, Morgan Stanley have each published estimates within 1–2 points of each other) puts Financials at ~25–28% of subscription revenue growing ~25%/yr; HCM at ~72–75% growing ~10–12%/yr; Adaptive Planning (within the Financials segment as a sub-suite) at ~5–7% of total subscription.</p>
+<table>
+<thead>
+<tr>
+<th>Product line</th>
+<th>~% of FY26 sub revenue</th>
+<th>~Sub revenue $B</th>
+<th>~Growth YoY</th>
+<th>Strategic role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HCM core (incl. Payroll, Recruiting, Talent)</td>
+<td>~74%</td>
+<td>~$6.5</td>
+<td>~12%</td>
+<td>Mature anchor; install-base monetization</td>
+</tr>
+<tr>
+<td>Financials (incl. Adaptive, Spend Mgmt)</td>
+<td>~26%</td>
+<td>~$2.3</td>
+<td>~25%</td>
+<td>Share-gainer vs Oracle/SAP; F500 wedge</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>product_mix_est</code> in <code>data/deck_data.json</code>. All values triangulated, not disclosed.</em></p>
+<p>The strategic read: <strong>HCM is the foundation that keeps the customer; Financials is the share-gainer that justifies the multiple.</strong> The 25%/yr Financials growth rate is the part the bull case needs the PM to internalize. At ~$2.3B FY26 subscription and 25% growth, Financials is on a path to ~$5.6B by FY30 — almost exactly the size of the entire FY16 company. Oracle Fusion and SAP S/4 are the share donors; the F500 buying logic ("same vendor for HCM and Fin reduces integration cost and shared employee/cost-center master data") drives the wedge.</p>
+<h3>2x3 matrix — customer tier × product line (FY26 ARR estimates)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>HCM</th>
+<th>Financials</th>
+<th>Adaptive (sub-product)</th>
+<th>Row total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enterprise (&gt;3,000 EE)</td>
+<td>~52%</td>
+<td>~17%</td>
+<td>~3%</td>
+<td>~72%</td>
+</tr>
+<tr>
+<td>Mid-market (1,000–3,000 EE)</td>
+<td>~17%</td>
+<td>~5%</td>
+<td>~1%</td>
+<td>~23%</td>
+</tr>
+<tr>
+<td>Smaller (&lt;1,000 EE)</td>
+<td>~5%</td>
+<td>~0.5%</td>
+<td>~0%</td>
+<td>~5%</td>
+</tr>
+<tr>
+<td>Column total</td>
+<td>~74%</td>
+<td>~22%*</td>
+<td>~4%*</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: blended estimates from <code>product_mix_est</code> and <code>customer_size_mix_est</code>. Column totals approximate the disclosed-product mix. </em><em>Every cell is an estimate, not a disclosed value</em><em> — order-of-magnitude only. </em>Financials and Adaptive together = ~26%, consistent with the product table above.*</p>
+<p>The matrix says one thing clearly: <strong>the high-value, high-growth cell — Enterprise × Financials at ~17% of ARR — is structurally the most important for the AI Winner thesis.</strong> That cell is where the Continuous Close agent, agent cost attribution via the Agent System of Record, and the Contribution Graph live. It is also the cell where Workday is most exposed to Oracle and SAP, and most insulated from any AI-native that lacks an established Financials suite.</p>
+<h3>Share evolution — chart description (the four lines a PM would want to see)</h3>
+<p>I can't draw the chart in markdown. I can describe what it would show. A four-line plot over FY24–FY30 — each line trending in a direction favorable to the long thesis:</p>
+<ol>
+<li><strong>Subscription % of revenue</strong>: 91.0% FY24 → 92.5% FY26 → 94.9% FY30. Steady mix shift toward the franchise line.</li>
+<li><strong>HCM % of subscription</strong>: ~78% FY24 → ~74% FY26 → ~65% FY30 (extrapolating Financials growing 2× HCM). The mature line shrinks relatively as Financials wedge grows.</li>
+<li><strong>Financials % of subscription</strong>: ~22% FY24 → ~26% FY26 → ~35% FY30. The share-gainer line crosses one-third of subscription.</li>
+<li><strong>Expansion % of incremental subscription growth</strong>: 50% FY24 → 60% FY26 → likely ~65% FY27 (if trend holds). Maturity signal — install base becomes the engine.</li>
+</ol>
+<p>All four lines move in directions favorable to the long thesis. None of these moves require execution heroics; they are the consequence of disclosed disclosures plus reasonable extrapolation.</p>
+<hr />
+<h2>3. Stock-based compensation — the universal concern</h2>
+<p>Every investor stress-test agent in <code>wiki/30_investor_perspectives/</code> flagged SBC as the central problem with the name at $129. Buffett (1986 owner-earnings letter; 1998 "the most blatant case of self-serving accounting" letter on options), Ackman (Pershing's quality-compounder filter; Restaurant Brands SBC work in 2019), Terry Smith ("stock-based compensation is real compensation funded by issuing dilutive equity" — Fundsmith Annual Letter, multiple years), Cathie Wood (ARK's owner-FCF framework), and Howard Marks (pendulum/expected-value lens) all independently converged on the same arithmetic. The main brief touches it. This addendum makes it the central financial analysis.</p>
+<h3>3a. The historical SBC trend — declining, but slowly</h3>
+<table>
+<thead>
+<tr>
+<th>FY</th>
+<th>SBC $B</th>
+<th>Revenue $B</th>
+<th>SBC % of revenue</th>
+<th>Diluted shares (M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY21</td>
+<td>1.00</td>
+<td>4.32</td>
+<td>23.3%</td>
+<td>237.0</td>
+</tr>
+<tr>
+<td>FY22</td>
+<td>1.10</td>
+<td>5.14</td>
+<td>21.4%</td>
+<td>254.0</td>
+</tr>
+<tr>
+<td>FY23</td>
+<td>1.30</td>
+<td>6.22</td>
+<td>20.8%</td>
+<td>254.8</td>
+</tr>
+<tr>
+<td>FY24</td>
+<td>1.42</td>
+<td>7.26</td>
+<td>19.5%</td>
+<td>265.3</td>
+</tr>
+<tr>
+<td>FY25</td>
+<td>1.52</td>
+<td>8.45</td>
+<td>17.9%</td>
+<td>269.2</td>
+</tr>
+<tr>
+<td>FY26</td>
+<td>1.63</td>
+<td>9.55</td>
+<td>17.0%</td>
+<td>268.1</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>hist.sbc</code>, <code>hist.revenue</code>, <code>hist.diluted_shares</code> in <code>data/deck_data.json</code>; cross-checked to FY26 10-K Note 9 (Equity Incentive Plans).</em></p>
+<p>SBC as a percentage of revenue has declined 6.3 points over five years — about 100bps per year, which is the right rate for a maturing SaaS but slow enough that the absolute dollar grew $0.6B over the period. <strong>The trajectory is correct; the level is not.</strong> Mature enterprise software peers run 4–8% (Oracle 5.6%, SAP ~5%, Adobe 8.5%). Workday at 17% is still in mid-cycle SaaS territory, not mature.</p>
+<h3>3b. Dilution math — the share count has grown 13% in five years</h3>
+<p>FY21 diluted shares = 237.0M. FY26 = 268.1M. Gross dilution = +31.1M shares = <strong>+13.1% over five years.</strong> Workday began an authorized $1B buyback in FY24 and a $1.5B authorization in FY26; cumulative shares repurchased through FY26 are roughly 12M, meaning gross share issuance from SBC was ~43M shares over the period. <strong>Buybacks have offset only ~28% of gross SBC dilution to date.</strong> This is the specific arithmetic that Terry Smith's framework flags as disqualifying — if you have to buy back $1B/yr of stock just to keep your share count flat, the cash return to outside owners is fictitious.</p>
+<h3>3c. The owner-FCF gap — the multiple the bears are pricing</h3>
+<table>
+<thead>
+<tr>
+<th>FY26 metric</th>
+<th>$B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reported FCF</td>
+<td>2.78</td>
+</tr>
+<tr>
+<td>Less: SBC</td>
+<td>(1.63)</td>
+</tr>
+<tr>
+<td>Owner-FCF (FCF less SBC)</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td>Diluted shares (M)</td>
+<td>268.1</td>
+</tr>
+<tr>
+<td>Owner-FCF per share</td>
+<td>$4.30</td>
+</tr>
+<tr>
+<td>Owner-FCF multiple at $129</td>
+<td><strong>~30×</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>hist.fcf</code>, <code>hist.sbc</code>, <code>hist.diluted_shares</code> in <code>data/deck_data.json</code>.</em></p>
+<p>At $129, the sell-side prints the stock at ~12× headline FCF. Five investor frameworks independently converged on the <em>owner-FCF</em> multiple of ~30×. That is the gap. <strong>The thesis has to underwrite a path that closes it.</strong> The three scenarios in the main brief do close it to varying degrees; the question is which trajectory of SBC compression management actually delivers, and when.</p>
+<h3>3d. What each scenario requires on SBC</h3>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>FY26 SBC</th>
+<th>FY30 SBC</th>
+<th>FY30 SBC % rev</th>
+<th>Implicit ask of management</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Winner</td>
+<td>$1.63B</td>
+<td>$2.29B</td>
+<td>~13.0%</td>
+<td>Modest compression (400bps); growth justifies dilution</td>
+</tr>
+<tr>
+<td>Run For Cash</td>
+<td>$1.63B</td>
+<td>$1.23B</td>
+<td>~10.0%</td>
+<td>Meaningful compression; tracks mature-SaaS template</td>
+</tr>
+<tr>
+<td>What Goes Wrong</td>
+<td>$1.63B</td>
+<td>$0.41B</td>
+<td>~6.0%</td>
+<td>Brutal — only works if headcount cut 40%+</td>
+</tr>
+<tr>
+<td>Bear</td>
+<td>$1.63B</td>
+<td>$1.38B</td>
+<td>~13.0%</td>
+<td>Compression fails; multiple stays compressed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: scenario blocks in <code>data/deck_data.json</code>.</em></p>
+<p>The interesting cross-scenario point: <strong>What Goes Wrong and Run For Cash both deliver SBC compression as a side effect of the operating model — you don't need management to specifically commit to it, you just need them to do what the scenario says.</strong> AI Winner is different: SBC stays elevated because headcount stays elevated because growth is reinvested. That makes AI Winner the <em>more fragile</em> branch on owner-economics, not the safer one — exactly the inversion the main brief flagged.</p>
+<h3>3e. The Eschenbach commitment we need</h3>
+<p>The single most actionable read on this name in the next 12 months is whether Eschenbach commits a public SBC glide path at the FY27 analyst day (typical Workday cadence is mid-September at Rising). A useful template — neither aggressive nor ambitious, just credible — would be:</p>
+<ul>
+<li>"SBC as a percentage of revenue declines ~150bps per year through FY30."</li>
+<li>"Net share count is flat or down over the planning horizon; we will size buybacks to fully offset gross SBC issuance."</li>
+<li>"Operating margin (GAAP, including SBC) expands at least 200bps per year."</li>
+</ul>
+<p>If he commits to any two of those three, the multiple opens. If he refuses to put any number on the SBC line, the bear-case probability goes up materially — and the right response is to trim the position rather than scale it. <strong>This is the cleanest single catalyst on the name.</strong></p>
+<h3>3f. The quarterly SBC monitor</h3>
+<p>The metric to track every print, not annually:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Target (Run For Cash)</th>
+<th>Target (AI Winner)</th>
+<th>Bear signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SBC as % of revenue</td>
+<td>-100bps YoY each quarter</td>
+<td>-50bps YoY each quarter</td>
+<td>Flat or rising</td>
+</tr>
+<tr>
+<td>Gross dilution (shares issued from SBC)</td>
+<td>&lt;2% of share count annualized</td>
+<td>&lt;3% of share count annualized</td>
+<td>&gt;3% annualized</td>
+</tr>
+<tr>
+<td>Buyback shares retired</td>
+<td>≥ gross dilution</td>
+<td>≥ 60% of gross dilution</td>
+<td>&lt;50% of gross dilution</td>
+</tr>
+<tr>
+<td>Net dilution (diluted shares YoY change)</td>
+<td>-1% to flat</td>
+<td>Flat to +1%</td>
+<td>&gt;+1%</td>
+</tr>
+<tr>
+<td>Buyback execution ($ spent / avg price paid)</td>
+<td>$1.0–1.5B/yr at &lt;$140 avg</td>
+<td>$0.5–1.0B/yr at &lt;$160 avg</td>
+<td>&lt;$0.5B/yr at any price</td>
+</tr>
+</tbody>
+</table>
+<p>If three or more of these flip bear-signal for two consecutive quarters, the SBC bear case is real and the position should be cut regardless of the AI ARR trajectory. <strong>Owner-economics gate the thesis; AI ARR does not save a name that is bleeding 3% of share count per year.</strong></p>
+<hr />
+<h2>4. Attach rates by SKU</h2>
+<p><em>Placeholder — filled in by separate research stream. See <code>WDAY_PITCH/addendum_attach_rates.md</code> when ready.</em></p>
+<p>The questions this section will answer:
+- Of the 11,500 customers in the Workday install base, how many have HCM-only vs HCM+Financials vs HCM+Financials+Adaptive vs all-three-plus-AI-products?
+- What is the attach rate of the 12 GA AI agents to the base customer? (FY26 disclosure: 400+ customers on the GA agents → ~3.5% attach.)
+- What is the attach rate of Workday Build, Recruiting, Payroll, Spend Management, Adaptive Planning?
+- For customers buying Financials, what is the cross-attach back to HCM (and vice versa)?</p>
+<p>These figures matter because attach economics drive the per-customer ARR ramp that underpins the "expansion is 60% of growth" disclosure analyzed in Section 2a. Without attach-rate granularity we cannot decompose whether expansion is coming from new SKU attach (good — sustained for years) vs. seat growth at existing customers (less good — capped by employee count) vs. price escalators (worst — finite, customer-resented).</p>
+<hr />
+<p><em>Sources: Workday FY26 10-K (period ended January 31, 2026); FY25 10-K, FY24 10-K (for prior expansion-vs-new disclosures); <code>data/deck_data.json</code> blocks <code>revenue_mix</code>, <code>new_vs_expansion</code>, <code>product_mix_est</code>, <code>customer_size_mix_est</code>, <code>hist</code>, scenario blocks; <code>wiki/30_investor_perspectives/</code> (Buffett, Ackman, Smith, Wood, Marks, Druckenmiller); CFO Zane Rowe investor-day commentary FY25/FY26 (customer-tier framing). Estimates flagged explicitly where used.</em></p>
+<div class="footer">JAOD &amp; (mainly) Claude · May 20, 2026 · <a href="index.html">Home</a></div>
+</body>
+</html>
