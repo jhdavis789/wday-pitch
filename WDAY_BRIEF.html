@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>WDAY brief — $129, +151% prob-weighted TSR</title>
-
+<title>WDAY at $129 — long, 3% starter, 5-10 year hold</title>
 <style>
   :root {
     --navy:    #00294b;
@@ -38,68 +37,27 @@
   ul, ol { margin: 8px 0 14px 22px; }
   li { margin-bottom: 4px; }
   hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
-  table { border-collapse: collapse; margin: 14px 0 18px; width: 100%; font-size: 13.5px; }
+  table {
+    border-collapse: collapse;
+    margin: 14px 0 18px;
+    width: 100%;
+    font-size: 13.5px;
+  }
   th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
   th { background: var(--navy); color: white; font-weight: 600; }
   tr:nth-child(even) td { background: var(--cell); }
   blockquote { border-left: 3px solid var(--teal); margin: 10px 0; padding: 4px 14px; color: var(--gray); }
   img { max-width: 100%; height: auto; display: block; margin: 14px auto; border: 1px solid var(--rule); border-radius: 6px; }
   code { background: var(--cell); padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  /* The figure caption is the *italic line* that immediately follows an image — markdown emits it as <em> inside its own <p>. */
   p > em:only-child { display: block; font-size: 13px; color: var(--gray); text-align: center; margin: -8px auto 18px; max-width: 720px; }
+  /* First-paragraph italic (subtitle line) gets its own treatment */
   body > p:first-of-type em:only-child { color: var(--gray); }
+  /* Make the very-first headline line stand out */
   h2:first-of-type { margin-top: 22px; }
-  .nav { background: var(--cell); border-left: 3px solid var(--navy); padding: 10px 14px; margin: 0 0 24px; font-size: 13.5px; }
-  .nav a { margin-right: 14px; }
-  .nav strong { display: inline-block; margin-right: 10px; }
-  .doc-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
-  }
-  .doc-card {
-    border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px;
-    background: white;
-  }
-  .doc-card h3 { margin-top: 0; }
-  .doc-card .meta { color: var(--gray); font-size: 12.5px; margin-top: 4px; }
-  .doc-card a.title { font-size: 17px; color: var(--navy); border-bottom: none; font-weight: 700; }
-  .doc-card a.title:hover { color: var(--teal); }
-  .doc-card .desc { margin: 8px 0 0; font-size: 14px; color: #2a3744; }
-  .download-row {
-    background: var(--cell); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-size: 14px;
-  }
-  .download-btn {
-    display: inline-block;
-    background: var(--navy);
-    color: white !important;
-    padding: 12px 22px;
-    border-radius: 6px;
-    border: none !important;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    margin: 18px 0 6px;
-    transition: background 0.15s;
-  }
-  .download-btn:hover {
-    background: var(--teal);
-    color: white !important;
-  }
-  .download-btn::before { content: "↓  "; font-weight: bold; }
-  .download-caption { display: block; font-size: 12.5px; color: var(--gray); margin-bottom: 18px; }
-  .footer { color: var(--gray); font-size: 12.5px; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); }
 </style>
-
 </head>
 <body>
-<div class="nav">
-<strong>WDAY pitch:</strong>
-<a href="index.html">Home</a>
-<a href="tearsheet.html">Tearsheet</a>
-<a href="brief.html">Brief</a>
-<a href="addendum.html">Addendum</a>
-<a href="assumptions.html">Assumptions</a>
-<a href="ic_qa.html">IC Q&amp;A</a>
-<a href="WDAY_Model.xlsx" download>↓ Excel model</a>
-</div>
 <h1>Workday (WDAY) at $129 — long, 3% starter, 5-10 year hold</h1>
 <p><em>JAOD, May 20, 2026. One-page tearsheet for the IC: <a href="WDAY_TEARSHEET.md"><code>WDAY_TEARSHEET.md</code></a>. Addendum (mix / SBC / attach): <a href="WDAY_BRIEF_ADDENDUM.md"><code>WDAY_BRIEF_ADDENDUM.md</code></a>. Model assumptions walkthrough: <a href="MODEL_ASSUMPTIONS.md"><code>MODEL_ASSUMPTIONS.md</code></a>. Excel: <a href="WDAY_Model.xlsx"><code>WDAY_Model.xlsx</code></a>. Simulated IC dialogue: <a href="IC_MEETING_QA.md"><code>IC_MEETING_QA.md</code></a>.</em></p>
 <blockquote>
@@ -711,6 +669,5 @@
 <p><em>Disclaimer: Author has spoken with investors who own this stock but has not discussed it with anyone invested in the past 6 months.</em></p>
 <p><em>Sources: Workday FY26 10-K (period ended January 31, 2026); Workday Q4 FY26 earnings release and prepared remarks; FAD 2023 / 2024 / 2025 financial analyst day presentations; build_model.py outputs in <code>data/deck_data.json</code>; wiki/00_thesis.md, wiki/10_competitive_landscape.md, wiki/20_ai_winning_cases.md, wiki/25_contribution_graph.md, wiki/30_investor_perspectives/</em>, wiki/35_hard_bear.md, wiki/40_vc_rebuttal.md, wiki/50_fde_moat.md, wiki/60_attach_rates.md, wiki/70_customer_voices.md, wiki/80_microsoft_threat.md, wiki/90_backlog_quality.md, wiki/100_eschenbach.md; audit/FACT_CHECK.md, audit/MODEL_AUDIT.md.*</p>
 <p><em>Charts generated by <code>scripts/make_charts.py</code> and <code>scripts/make_price_chart.py</code>, saved to <code>charts/</code>. Market cap $33.24B, EV $31.62B; the $3.82B debt convention includes ~$834M of operating-lease liabilities (Senior Notes alone are $2.99B). Per-share targets are computed against terminal diluted shares from the projection.</em></p>
-<div class="footer">JAOD &amp; (mainly) Claude · May 20, 2026 · <a href="index.html">Home</a></div>
 </body>
 </html>
