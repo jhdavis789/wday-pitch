@@ -106,6 +106,8 @@
 <hr />
 <h2>1. Revenue mix — subscription vs professional services</h2>
 <p>Workday reports two revenue lines and two cost-of-revenue lines. The subscription line is the franchise; the professional-services (PS) line is the loss-leader used to fund customer acquisition and partner-channel build. The mix shift between these two — and the gross-margin profile of each — is the most underappreciated source of operating leverage in the next four years, before any opex cuts.</p>
+<p><img alt="Revenue by segment, FY18-FY30E" src="charts/08_revenue_by_segment.png" /></p>
+<p><em>Figure 1. Revenue by segment, FY18-FY30E. HCM share fell 92% to 69% of subscription as Financials and Adaptive Planning grew; AI ARR is the new growth lever — projected to be the third-largest subscription line by FY30 in the Good AI case. Splits estimated from FAD commentary and 10-K MD&A; Workday does not publicly disclose the HCM-vs-Financials split. Source: Workday 10-K filings FY18-FY26, FAD 2023-2025, AI Winner scenario in <code>data/deck_data.json</code>.</em></p>
 <p><strong>The forward model</strong>, built into <code>data/deck_data.json</code> under <code>revenue_mix</code>, assumes the following growth scaffolding: subscription +15% / +11% / +8% / +6% FY27→FY30, PS flat / flat / -2% / -2%. Subscription gross margin (GM) expands from 82.7% FY26 to 87.0% FY30 — 430bps of structural lift from scale and from AI-deployment cost absorption that is already paid for. PS GM stays negative but compresses from -9.9% FY26 to +2.0% FY30 as partners take more share of new implementations. Total GM moves from 75.7% FY26 to 82.7% FY30 — <strong>700bps of gross-margin uplift from mix shift alone</strong>, before any S&amp;M or R&amp;D leverage. That is the load-bearing point of this section.</p>
 <table>
 <thead>
@@ -271,6 +273,8 @@
 <p>The slope matters more than any single year's value. <strong>The expansion share is rising 5 points per year and is now the majority contributor.</strong> This is a maturity signal — the install base is now large enough that incremental dollar of subscription revenue is more likely to come from existing customers than from new logos. Two implications for the thesis:</p>
 <p>First, the AI ARR ramp ($400M FY26 growing &gt;100% YoY) does not require new-logo wins. Illuminate and the 12 GA agents sell into the existing wallet first; the 11,500-customer install base is the addressable market for the next two years of AI ARR growth. The bear story "no one is buying new Workday" misses that the bulk of growth is <em>already</em> not coming from new logos. New logos contribute ~40% of growth, but the install base contributes 60%, and that 60% is where AI sells first.</p>
 <p>Second, the new-logo line is still healthy in absolute terms. New-logo subscription revenue contribution in FY26 = 40% × $1,115M YoY = ~$446M. That is roughly one new mid-size enterprise customer per week ($8–10M ACV apiece). Q4 FY26 named-customer disclosure included Boston Children's Hospital, Copenhagen Airports, Fruit of the Loom, Lavazza, Sargent &amp; Lundy, NY Unified Court System, Queensland University of Technology — mixed enterprise + public-sector. Workday's Gartner-named Leader status for 10 consecutive years and continued F500 penetration lift (&gt;60% → &gt;65%) suggest this rate is sustainable or accelerating.</p>
+<p><img alt="F500 penetration history and forward paths" src="charts/10_f500_penetration.png" /></p>
+<p><em>Figure 2. Fortune 500 penetration, FY18-FY30E. Disclosed 35% in FY18 → 65% in FY26. The forward paths diverge — Good AI keeps attaching (78% by FY30), Runs For Cash plateaus, What Goes Wrong slips. F500 attach is the cleanest single metric for the enterprise displacement thesis. Source: Workday annual reports + investor-day prints; forward paths from <code>data/deck_data.json</code> scenarios.</em></p>
 <h3>2b. Customer size mix — not disclosed, triangulated from investor-day commentary</h3>
 <p>Workday does not disclose ARR by customer size. The estimates below are triangulated from (i) CFO Zane Rowe's investor-day comments framing the install base as "predominantly large enterprise with growing mid-market traction," (ii) the disclosed customer count (~11,500) against the disclosed F500/F1000 anchor counts (&gt;65% of F500, &gt;50% of F1000), and (iii) industry-source estimates of typical ACV by tier ($8–15M for &gt;3,000 EE, $1.5–4M for 1,000–3,000 EE, &lt;$500K for &lt;1,000 EE).</p>
 <table>
@@ -450,6 +454,8 @@
 </table>
 <p><em>Source: <code>hist.sbc</code>, <code>hist.revenue</code>, <code>hist.diluted_shares</code> in <code>data/deck_data.json</code>; cross-checked to FY26 10-K Note 9 (Equity Incentive Plans).</em></p>
 <p>SBC as a percentage of revenue has declined 6.3 points over five years — about 100bps per year, which is the right rate for a maturing SaaS but slow enough that the absolute dollar grew $0.6B over the period. <strong>The trajectory is correct; the level is not.</strong> Mature enterprise software peers run 4–8% (Oracle 5.6%, SAP ~5%, Adobe 8.5%). Workday at 17% is still in mid-cycle SaaS territory, not mature.</p>
+<p><img alt="SBC trajectory — three scenario paths" src="charts/09_sbc_trajectory.png" /></p>
+<p><em>Figure 3. SBC as % of revenue, FY21-FY30E. Historical glide 23.3% → 17.0% (six years, ~100bps/yr). From FY27 the three scenario paths diverge sharply: What Goes Wrong drops to ~10% only because revenue collapses faster than SBC compresses; Runs For Cash delivers the cleanest path to the mature-SaaS band (4-8%) via headcount cuts; Good AI keeps SBC elevated (~11%) because growth is reinvested. Source: historical from <code>hist.sbc</code> and <code>hist.revenue</code>; forward from scenario blocks in <code>data/deck_data.json</code>.</em></p>
 <h3>3b. Dilution math — the share count has grown 13% in five years</h3>
 <p>FY21 diluted shares = 237.0M. FY26 = 268.1M. Gross dilution = +31.1M shares = <strong>+13.1% over five years.</strong> Workday began an authorized $1B buyback in FY24 and a $1.5B authorization in FY26; cumulative shares repurchased through FY26 are roughly 12M, meaning gross share issuance from SBC was ~43M shares over the period. <strong>Buybacks have offset only ~28% of gross SBC dilution to date.</strong> This is the specific arithmetic that Terry Smith's framework flags as disqualifying — if you have to buy back $1B/yr of stock just to keep your share count flat, the cash return to outside owners is fictitious.</p>
 <h3>3c. The owner-FCF gap — the multiple the bears are pricing</h3>
@@ -587,7 +593,146 @@
 </table>
 <p>If three or more of these flip bear-signal for two consecutive quarters, the SBC bear case is real and the position should be cut regardless of the AI ARR trajectory. <strong>Owner-economics gate the thesis; AI ARR does not save a name that is bleeding 3% of share count per year.</strong></p>
 <hr />
-<h2>4. Attach rates by SKU</h2>
+<h2>4. Backlog — the cushion under the thesis</h2>
+<p>Workday discloses two backlog metrics: total subscription backlog (all signed contracted dollars, multi-year) and 12-month backlog (revenue contracted to recognize in the next four quarters). Both are reported quarterly. They are the most defensible numbers in the whole filing — they cannot be retroactively adjusted, they cannot be triangulated, they are what the customers actually signed.</p>
+<table>
+<thead>
+<tr>
+<th>FY</th>
+<th>Total sub backlog ($B)</th>
+<th>12-mo sub backlog ($B)</th>
+<th>Total / Sub revenue</th>
+<th>12-mo / Next-year sub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY24</td>
+<td>20.9</td>
+<td>6.6</td>
+<td>3.17×</td>
+<td>~100%</td>
+</tr>
+<tr>
+<td>FY25</td>
+<td>25.1</td>
+<td>7.6</td>
+<td>3.25×</td>
+<td>~99%</td>
+</tr>
+<tr>
+<td>FY26</td>
+<td>28.1</td>
+<td>8.8</td>
+<td>3.18×</td>
+<td>~100%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>sub_backlog_total</code> and <code>sub_backlog_12m</code> in <code>data/deck_data.json</code>; tied to FY26 10-K Note 4 (Remaining Performance Obligations).</em></p>
+<p><img alt="Backlog trajectory FY24-FY30" src="charts/11_backlog_trajectory.png" /></p>
+<p><em>Figure 4. Subscription backlog FY24-FY30E (Good AI projection). Total backlog grew 34% in two years and the 12-month line essentially equals the next year's subscription revenue — a confirmation that booked-to-revenue conversion is mechanical, not faith-based. Total backlog of $28B at FY26 covers ~3.2 years of run-rate sub at the FY26 ratio. Source: <code>sub_backlog_total</code> / <code>sub_backlog_12m</code> blocks; forward from <code>scenarios.ai_winner.sub_backlog_12m</code>.</em></p>
+<p>The 3.2× ratio is the cleanest single bear-case rebuttal in the file. <strong>Even in What Goes Wrong, three years of revenue is already signed.</strong> Customers may not renew at the same rate, but they cannot un-sign existing multi-year deals. The downside in WGW is what happens <em>after</em> FY28 — but the FCF generated through FY28 funds the buyback that supports the floor price even if growth stalls.</p>
+<hr />
+<h2>5. AI ARR — bookings vs recognized vs deferred balance</h2>
+<p>The AI ARR mechanic is misunderstood. Booked AI ARR (what gets announced on earnings calls) is the contract value at signing; recognized AI revenue is what flows through the income statement on a ratable basis; the difference accumulates as a deferred-revenue balance on the balance sheet. In a fast-growing AI book, the gap can be material.</p>
+<table>
+<thead>
+<tr>
+<th>FY</th>
+<th>AI ARR booked ($M)</th>
+<th>AI revenue recognized ($M)</th>
+<th>Deferred AI balance ($M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY27e</td>
+<td>800</td>
+<td>560</td>
+<td>240</td>
+</tr>
+<tr>
+<td>FY28e</td>
+<td>1,440</td>
+<td>1,200</td>
+<td>480</td>
+</tr>
+<tr>
+<td>FY29e</td>
+<td>2,304</td>
+<td>2,143</td>
+<td>641</td>
+</tr>
+<tr>
+<td>FY30e</td>
+<td>3,226</td>
+<td>3,152</td>
+<td>714</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>ai_deferred_trajectory.ai_winner</code> in <code>data/deck_data.json</code> — Good AI scenario.</em></p>
+<p><img alt="AI ARR bookings vs recognized vs deferred" src="charts/12_ai_deferred.png" /></p>
+<p><em>Figure 5. AI ARR mechanics under Good AI, FY27-FY30. Bookings outrun recognized revenue in every year; the deferred balance compounds to $714M sitting on the balance sheet by FY30 — over 20% of FY30 recognized AI revenue. That deferred number is real cash already collected, not a hope. Source: <code>data/deck_data.json</code> ai_deferred_trajectory.</em></p>
+<p>Two implications. First, <strong>the AI ARR number Eschenbach quotes is not the AI revenue line</strong> — investors who model AI ARR straight into the income statement overstate FY27-28 P&amp;L impact by 25-30%. Second, the deferred balance is a free working-capital float — cash collected at signing that funds the AI cost base before the revenue lands. The faster AI grows, the bigger the float, the more cash conversion exceeds GAAP earnings. This is structurally the same dynamic that made early subscription SaaS attractive; the analog is correct.</p>
+<hr />
+<h2>6. Capital return — the cash-pivot scenario</h2>
+<p>The Runs For Cash scenario delivers the cleanest test of management's commitment to owner-economics. It assumes revenue growth slows materially from FY27 (Workday becomes Oracle, not Salesforce) but operating margins expand fast as R&amp;D and S&amp;M get cut. The use-of-cash question becomes the entire thesis.</p>
+<table>
+<thead>
+<tr>
+<th>FY</th>
+<th>Diluted shares (M)</th>
+<th>Annual buyback ($M)</th>
+<th>Cumulative buyback ($M)</th>
+<th>Cumulative cap return / $129 entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY26</td>
+<td>268.1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>FY27e</td>
+<td>257.3</td>
+<td>1,387</td>
+<td>1,387</td>
+<td>4.9%</td>
+</tr>
+<tr>
+<td>FY28e</td>
+<td>239.3</td>
+<td>2,363</td>
+<td>3,750</td>
+<td>15.5%</td>
+</tr>
+<tr>
+<td>FY29e</td>
+<td>217.7</td>
+<td>2,867</td>
+<td>6,617</td>
+<td>29.7%</td>
+</tr>
+<tr>
+<td>FY30e</td>
+<td>196.0</td>
+<td>2,939</td>
+<td>9,556</td>
+<td>45.6%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <code>scenarios.run_for_cash</code> in <code>data/deck_data.json</code> — buyback_total, diluted_shares, cum_capital_return_per_share.</em></p>
+<p><img alt="Buyback cumulative dollars vs share count, Runs For Cash" src="charts/13_buyback_cash_pivot.png" /></p>
+<p><em>Figure 6. Runs For Cash — $9.6B of cumulative buyback retires ~27% of shares over four years, FY26 → FY30. The buyback rises as growth slows because cash freed from R&amp;D / S&amp;M cuts has nowhere else to go. Diluted share count falls 268M → 196M. This is the answer to "why hold WDAY if it stops growing" — the cash return at $129 entry is itself a defensible IRR. Source: <code>data/deck_data.json</code> scenarios.run_for_cash.</em></p>
+<p>The narrative point: <strong>a software company that has stopped growing and pivoted to cash return is not a stranded asset — it is Oracle in 2010.</strong> ORCL compounded at ~13%/yr through the 2010s decade primarily by buying back stock, with revenue growth in the low-to-mid single digits. The Runs For Cash scenario is structurally the same template, and the math at $129 entry produces a low-double-digit IRR even before any multiple re-rating.</p>
+<hr />
+<h2>7. Attach rates by SKU</h2>
 <p><em>Placeholder — filled in by separate research stream. See <code>WDAY_PITCH/addendum_attach_rates.md</code> when ready.</em></p>
 <p>The questions this section will answer:
 - Of the 11,500 customers in the Workday install base, how many have HCM-only vs HCM+Financials vs HCM+Financials+Adaptive vs all-three-plus-AI-products?
