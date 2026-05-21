@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WDAY — backlog projection</title>
+
+<style>
+  :root {
+    --navy:    #00294b;
+    --navy2:   #003a66;
+    --teal:    #007e6c;
+    --magenta: #a6256e;
+    --gray:    #44525c;
+    --bg:      #fbfcfd;
+    --rule:    #d8dde2;
+    --cell:    #f3f5f7;
+  }
+  html { background: #eef0f3; }
+  body {
+    max-width: 880px;
+    margin: 24px auto;
+    padding: 40px 48px 60px;
+    background: var(--bg);
+    color: #1a2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.55;
+    box-shadow: 0 4px 24px rgba(0,41,75,.10);
+  }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 30px; color: var(--navy); margin: 0 0 4px; font-weight: 700; line-height: 1.15; }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 22px; color: var(--navy); margin: 36px 0 10px; font-weight: 700; border-bottom: 2px solid var(--navy); padding-bottom: 6px; }
+  h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; color: var(--navy2); margin: 22px 0 6px; font-weight: 600; }
+  p  { margin: 8px 0 12px; }
+  strong { color: var(--navy); }
+  em { color: var(--gray); }
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--navy); }
+  a:hover { color: var(--teal); border-bottom-style: solid; }
+  ul, ol { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 4px; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
+  table { border-collapse: collapse; margin: 14px 0 18px; width: 100%; font-size: 13.5px; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: var(--navy); color: white; font-weight: 600; }
+  tr:nth-child(even) td { background: var(--cell); }
+  blockquote { border-left: 3px solid var(--teal); margin: 10px 0; padding: 4px 14px; color: var(--gray); }
+  img { max-width: 100%; height: auto; display: block; margin: 14px auto; border: 1px solid var(--rule); border-radius: 6px; }
+  code { background: var(--cell); padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  p > em:only-child { display: block; font-size: 13px; color: var(--gray); text-align: center; margin: -8px auto 18px; max-width: 720px; }
+  body > p:first-of-type em:only-child { color: var(--gray); }
+  h2:first-of-type { margin-top: 22px; }
+  .nav { background: var(--cell); border-left: 3px solid var(--navy); padding: 10px 14px; margin: 0 0 24px; font-size: 13.5px; }
+  .nav a { margin-right: 14px; }
+  .nav strong { display: inline-block; margin-right: 10px; }
+  .doc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+  }
+  .doc-card {
+    border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px;
+    background: white;
+  }
+  .doc-card h3 { margin-top: 0; }
+  .doc-card .meta { color: var(--gray); font-size: 12.5px; margin-top: 4px; }
+  .doc-card a.title { font-size: 17px; color: var(--navy); border-bottom: none; font-weight: 700; }
+  .doc-card a.title:hover { color: var(--teal); }
+  .doc-card .desc { margin: 8px 0 0; font-size: 14px; color: #2a3744; }
+  .download-row {
+    background: var(--cell); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-size: 14px;
+  }
+  .download-btn {
+    display: inline-block;
+    background: var(--navy);
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: none !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 18px 0 6px;
+    transition: background 0.15s;
+  }
+  .download-btn:hover {
+    background: var(--teal);
+    color: white !important;
+  }
+  .download-btn::before { content: "↓  "; font-weight: bold; }
+  .download-caption { display: block; font-size: 12.5px; color: var(--gray); margin-bottom: 18px; }
+  .footer { color: var(--gray); font-size: 12.5px; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  .last-updated {
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+    color: var(--gray);
+    font-size: 11px;
+    background: rgba(251, 252, 253, 0.92);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+    z-index: 100;
+  }
+</style>
+
+</head>
+<body>
+<div class="nav">
+<strong>WDAY pitch:</strong>
+<a href="index.html">Home</a>
+<a href="tearsheet.html">Tearsheet</a>
+<a href="brief.html">Brief</a>
+<a href="addendum.html">Addendum</a>
+<a href="backlog.html">Backlog</a>
+<a href="a16z_rebuttal.html">a16z rebuttal</a>
+<a href="assumptions.html">Assumptions</a>
+<a href="ic_qa.html">IC Q&amp;A</a>
+<a href="WDAY_Model.xlsx" download>↓ Excel model</a>
+</div>
+<h1>The backlog</h1>
+<p><em>Workday's subscription revenue backlog over six years of history and four years of projection — the most diagnostic disclosed number for evaluating durability.</em></p>
+<hr />
+<h2>Why the backlog matters</h2>
+<p>The backlog (formally: "remaining performance obligations for subscription contracts") is the dollar value of contracted future subscription revenue that has not yet been recognized. It includes both billed and unbilled amounts and represents legally enforceable customer commitments. Three things make it the most diagnostic disclosed metric for a SaaS company:</p>
+<ol>
+<li><strong>It leads revenue by 1-3 years.</strong> Bookings (new ACV) hit backlog before they hit the income statement. A growing backlog means future revenue is locked in; a shrinking backlog means new bookings aren't keeping up with revenue recognition.</li>
+<li><strong>It's audited and contractually enforceable.</strong> Unlike "pipeline" or "ARR" estimates, the backlog number in the 10-K is a hard-disclosed liability of the company to deliver service and the customer to pay.</li>
+<li><strong>It separates durable franchises from melting ice cubes.</strong> A growing total backlog with a stable backlog-to-revenue ratio is the signature of an enterprise SaaS company adding customers and lengthening contract durations. A flat or declining backlog while revenue grows means the company is consuming its bookings faster than it's replenishing them.</li>
+</ol>
+<p>For Workday specifically, the backlog answers the central bear-case question: <em>"Are F500 customers actually leaving?"</em> If they were, the backlog would compress before churn shows up in revenue or retention metrics. It hasn't — the backlog has grown for seven straight years.</p>
+<hr />
+<h2>The historical series (FY20-FY26, pulled directly from 10-K filings)</h2>
+<p>All numbers below were pulled from individual SEC EDGAR 10-K filings. Sources cited at the bottom of this page.</p>
+<table>
+<thead>
+<tr>
+<th>Fiscal year end</th>
+<th>Total backlog ($B)</th>
+<th>24-month backlog ($B)</th>
+<th>12-month backlog ($B)</th>
+<th>YoY total</th>
+<th>Backlog / revenue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jan 31, 2020 (FY20)</td>
+<td>$8.29</td>
+<td>$5.48</td>
+<td>not disclosed</td>
+<td>—</td>
+<td>2.01×</td>
+</tr>
+<tr>
+<td>Jan 31, 2021 (FY21)</td>
+<td>$10.09</td>
+<td>$6.53</td>
+<td>not disclosed</td>
+<td>+21.7%</td>
+<td>2.34×</td>
+</tr>
+<tr>
+<td>Jan 31, 2022 (FY22)</td>
+<td>$12.81</td>
+<td>$7.98</td>
+<td>not disclosed</td>
+<td>+26.9%</td>
+<td>2.49×</td>
+</tr>
+<tr>
+<td>Jan 31, 2023 (FY23)</td>
+<td>$16.45</td>
+<td>$9.68</td>
+<td>$5.51</td>
+<td>+28.4%</td>
+<td>2.65×</td>
+</tr>
+<tr>
+<td>Jan 31, 2024 (FY24)</td>
+<td>$20.92</td>
+<td>$11.66</td>
+<td>$6.62</td>
+<td>+27.2%</td>
+<td>2.88×</td>
+</tr>
+<tr>
+<td>Jan 31, 2025 (FY25)</td>
+<td>$25.06</td>
+<td>$13.60</td>
+<td>$7.63</td>
+<td>+19.8%</td>
+<td>2.96×</td>
+</tr>
+<tr>
+<td><strong>Jan 31, 2026 (FY26)</strong></td>
+<td><strong>$28.10</strong></td>
+<td>est. ~$15.5</td>
+<td><strong>$8.83</strong></td>
+<td><strong>+12.1%</strong></td>
+<td><strong>2.94×</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total backlog CAGR FY20 → FY26: 22.6%/yr.</strong> Backlog compounded 3.4× in six years against revenue that grew ~2.6× (from $4.1B FY20 to $9.55B FY26). The backlog-to-revenue ratio rose from 2.0× to 2.94× — customers are signing longer-duration contracts, which is the structural lock-in of an enterprise system of record.</p>
+<p><strong>12-month backlog CAGR FY23 → FY26: 16.9%/yr.</strong> Outpaces subscription revenue growth (13-14% over the same window), meaning bookings are growing faster than revenue recognition. That gap is the leading indicator that revenue growth will not deteriorate further before FY28.</p>
+<p><strong>The FY26 deceleration to +12.1% is the only soft datapoint.</strong> Total backlog growth slowed materially from the +20-28% range of prior years. Three possible reads:
+1. <strong>Contract durations stopped lengthening</strong> — customers stopped signing longer deals, which would be benign if 12-month backlog held up. The 12-month figure grew +15.7% in FY26 ($7.63B → $8.83B), so this read is partially supported.
+2. <strong>New bookings are decelerating</strong> — the bear's preferred reading.
+3. <strong>Tougher comp</strong> vs the FY21-FY24 period when WDAY was signing many multi-year COVID-era expansion deals. Lapping that base.</p>
+<p>The honest read: some combination of all three. The FY27 print (Q1 May 21, 2026 and the full year) will resolve which dominates.</p>
+<hr />
+<h2>The disclosure-convention note</h2>
+<p>Workday's backlog disclosure evolved over the 6-year window. Important for any historical comparison:</p>
+<ul>
+<li><strong>FY20-FY22 10-Ks</strong>: disclosed only <strong>Total</strong> and <strong>24-month</strong> windows (no 12-month).</li>
+<li><strong>FY23 10-K (filed Feb 2023)</strong>: introduced <strong>12-month</strong> alongside 24-month and total. First filing to provide a 1-year window.</li>
+<li><strong>FY24-FY25 10-Ks</strong>: continue to disclose all three windows (total, 12-month, 24-month).</li>
+<li><strong>FY26 10-K (filed March 2026)</strong>: headline language emphasizes total and 12-month; 24-month figure is referenced in Note 15 but not the MD&amp;A executive table.</li>
+</ul>
+<p>This means the 12-month series is only consistently available from FY23 onward; the total backlog is the cleanest cross-period comparison going back to FY20.</p>
+<hr />
+<h2>The forward projection — backlog under each scenario</h2>
+<p>The model projects forward backlog growth per scenario. Backlog projections use scenario-specific growth assumptions that map to the underlying revenue scenarios:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>FY26 base</th>
+<th>FY27E</th>
+<th>FY28E</th>
+<th>FY29E</th>
+<th>FY30E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI works — total backlog ($B)</strong></td>
+<td>$28.10</td>
+<td>$32.6</td>
+<td>$38.5</td>
+<td>$45.8</td>
+<td>$53.1</td>
+</tr>
+<tr>
+<td><strong>AI works — 12-month ($B)</strong></td>
+<td>$8.83</td>
+<td>$10.20</td>
+<td>$11.93</td>
+<td>$14.05</td>
+<td>$16.20</td>
+</tr>
+<tr>
+<td><strong>AI doesn't — total backlog ($B)</strong></td>
+<td>$28.10</td>
+<td>$27.0</td>
+<td>$24.6</td>
+<td>$22.1</td>
+<td>$20.2</td>
+</tr>
+<tr>
+<td><strong>AI doesn't — 12-month ($B)</strong></td>
+<td>$8.83</td>
+<td>$8.45</td>
+<td>$7.61</td>
+<td>$6.85</td>
+<td>$6.30</td>
+</tr>
+<tr>
+<td><strong>I'm wrong — total backlog ($B)</strong></td>
+<td>$28.10</td>
+<td>$26.7</td>
+<td>$24.0</td>
+<td>$21.4</td>
+<td>$19.5</td>
+</tr>
+<tr>
+<td><strong>I'm wrong — 12-month ($B)</strong></td>
+<td>$8.83</td>
+<td>$8.40</td>
+<td>$7.20</td>
+<td>$6.30</td>
+<td>$5.65</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AI works trajectory</strong>: total backlog continues compounding ~17%/yr — slower than FY20-FY24's 22% pace because base is bigger and contract-duration tailwind is mostly exhausted. Backlog-to-revenue ratio holds at ~3.0×.</p>
+<p><strong>AI doesn't trajectory</strong>: backlog actually shrinks. Revenue declines per scenario (-10%/yr core ARR) flow through to bookings. By FY30, total backlog is $20B — down from $28B today, but the company is generating $35/share of cash return over the same window. The "shrinking backlog" is consistent with the "running for cash" story; the backlog being there at all (still ~3 years of revenue) is the floor under the TSR.</p>
+<p><strong>I'm wrong trajectory</strong>: faster compression than AI doesn't because Workday loses some F500 customers entirely (no renewal). Backlog declines to $19.5B by FY30 — still nearly 3 years of FY30 revenue but at a much lower terminal price.</p>
+<hr />
+<h2>What the bear has to argue</h2>
+<p>For the backlog story to be wrong:</p>
+<ol>
+<li><strong>The +12.1% FY26 deceleration accelerates further in FY27.</strong> If the next print shows total backlog growth below 10%, that's the disconfirming signal.</li>
+<li><strong>The 12-month backlog growth (currently +15.7%) drops below 8% for two consecutive quarters.</strong> Customers are not renewing at the same pace — the leading indicator of churn.</li>
+<li><strong>Backlog-to-revenue ratio compresses from 2.94× to below 2.5×</strong> — contract durations shortening, which would be consistent with customers hedging their bets on switching costs falling (AI-natives becoming more viable).</li>
+</ol>
+<p>None of those are visible in current disclosed data. The first datapoint to watch is the Q1 FY27 print on May 21, 2026.</p>
+<hr />
+<h2>The visualization</h2>
+<p>The backlog chart on the <a href="addendum.html">Addendum page</a> (Figure 11) shows the FY21-FY26 historical series plus the four-year forward projection per scenario. Annotated: total backlog grew 2.8× in 5 years (FY21 $10.1B → FY26 $28.1B), and the FY26/FY27 transition is the visual fork between the three scenarios.</p>
+<hr />
+<h2>Sources</h2>
+<p>All historical figures pulled directly from Workday 10-K filings on SEC EDGAR. Each year's accession number, filing date, and URL:</p>
+<ul>
+<li><strong>FY20</strong> (period Jan 31, 2020) — filed Mar 3, 2020, accession 0001327811-20-000022. Source: <a href="https://www.sec.gov/Archives/edgar/data/1327811/000132781120000022/wday-20200131.htm">SEC EDGAR</a></li>
+<li><strong>FY21</strong> (period Jan 31, 2021) — filed Mar 2, 2021, accession 0001327811-21-000020. Source: <a href="https://www.sec.gov/Archives/edgar/data/1327811/000132781121000020/wday-20210131.htm">SEC EDGAR</a></li>
+<li><strong>FY22</strong> (period Jan 31, 2022) — filed Feb 28, 2022, accession 0001327811-22-000030. Source: <a href="https://www.sec.gov/Archives/edgar/data/1327811/000132781122000030/wday-20220131.htm">SEC EDGAR</a></li>
+<li><strong>FY23</strong> (period Jan 31, 2023) — filed Feb 27, 2023, accession 0001327811-23-000024. Source: <a href="https://www.sec.gov/Archives/edgar/data/1327811/000132781123000024/wday-20230131.htm">SEC EDGAR</a></li>
+<li><strong>FY24</strong> (period Jan 31, 2024) — filed Mar 8, 2024, accession 0001327811-24-000044. Source: <a href="https://www.sec.gov/Archives/edgar/data/1327811/000132781124000044/wday-20240131.htm">SEC EDGAR</a></li>
+<li><strong>FY25</strong> (period Jan 31, 2025) — filed Mar 11, 2025, accession 0001327811-25-000056. Source: <a href="https://www.sec.gov/Archives/edgar/data/1327811/000132781125000056/wday-20250131.htm">SEC EDGAR</a></li>
+<li><strong>FY26</strong> (period Jan 31, 2026) — filed March 2026, FY26 10-K (in working data).</li>
+</ul>
+<p>Backlog definition (consistent across all 10-Ks): <em>"Our subscription revenue backlog, which is also referred to as remaining performance obligations for subscription contracts, represents contracted subscription services revenues that have not yet been recognized and includes billed and unbilled amounts."</em></p>
+<p>Forward projection numbers derived from the model at <code>WDAY_Model.xlsx</code>. Disclosure: Author has spoken with investors who own this stock but has not discussed it with anyone invested in the past 6 months.</p>
+<div class="footer">JAOD &amp; (mainly) Claude · May 20, 2026 · <a href="index.html">Home</a></div>
+<div class="last-updated">Last updated: 2026-05-20 18:39 ET</div>
+</body>
+</html>
