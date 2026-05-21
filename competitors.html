@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WDAY — competitor analysis</title>
+
+<style>
+  :root {
+    --navy:    #00294b;
+    --navy2:   #003a66;
+    --teal:    #007e6c;
+    --magenta: #a6256e;
+    --gray:    #44525c;
+    --bg:      #fbfcfd;
+    --rule:    #d8dde2;
+    --cell:    #f3f5f7;
+  }
+  html { background: #eef0f3; }
+  body {
+    max-width: 880px;
+    margin: 24px auto;
+    padding: 40px 48px 60px;
+    background: var(--bg);
+    color: #1a2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.55;
+    box-shadow: 0 4px 24px rgba(0,41,75,.10);
+  }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 30px; color: var(--navy); margin: 0 0 4px; font-weight: 700; line-height: 1.15; }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 22px; color: var(--navy); margin: 36px 0 10px; font-weight: 700; border-bottom: 2px solid var(--navy); padding-bottom: 6px; }
+  h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; color: var(--navy2); margin: 22px 0 6px; font-weight: 600; }
+  p  { margin: 8px 0 12px; }
+  strong { color: var(--navy); }
+  em { color: var(--gray); }
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--navy); }
+  a:hover { color: var(--teal); border-bottom-style: solid; }
+  ul, ol { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 4px; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
+  table { border-collapse: collapse; margin: 14px 0 18px; width: 100%; font-size: 13.5px; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: var(--navy); color: white; font-weight: 600; }
+  tr:nth-child(even) td { background: var(--cell); }
+  blockquote { border-left: 3px solid var(--teal); margin: 10px 0; padding: 4px 14px; color: var(--gray); }
+  img { max-width: 100%; height: auto; display: block; margin: 14px auto; border: 1px solid var(--rule); border-radius: 6px; }
+  code { background: var(--cell); padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  p > em:only-child { display: block; font-size: 13px; color: var(--gray); text-align: center; margin: -8px auto 18px; max-width: 720px; }
+  body > p:first-of-type em:only-child { color: var(--gray); }
+  h2:first-of-type { margin-top: 22px; }
+  .nav { background: var(--cell); border-left: 3px solid var(--navy); padding: 10px 14px; margin: 0 0 24px; font-size: 13.5px; }
+  .nav a { margin-right: 14px; }
+  .nav strong { display: inline-block; margin-right: 10px; }
+  .doc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+  }
+  .doc-card {
+    border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px;
+    background: white;
+  }
+  .doc-card h3 { margin-top: 0; }
+  .doc-card .meta { color: var(--gray); font-size: 12.5px; margin-top: 4px; }
+  .doc-card a.title { font-size: 17px; color: var(--navy); border-bottom: none; font-weight: 700; }
+  .doc-card a.title:hover { color: var(--teal); }
+  .doc-card .desc { margin: 8px 0 0; font-size: 14px; color: #2a3744; }
+  .download-row {
+    background: var(--cell); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-size: 14px;
+  }
+  .download-btn {
+    display: inline-block;
+    background: var(--navy);
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: none !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 18px 0 6px;
+    transition: background 0.15s;
+  }
+  .download-btn:hover {
+    background: var(--teal);
+    color: white !important;
+  }
+  .download-btn::before { content: "↓  "; font-weight: bold; }
+  .download-caption { display: block; font-size: 12.5px; color: var(--gray); margin-bottom: 18px; }
+  .footer { color: var(--gray); font-size: 12.5px; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  .last-updated {
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+    color: var(--gray);
+    font-size: 11px;
+    background: rgba(251, 252, 253, 0.92);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+    z-index: 100;
+  }
+</style>
+
+</head>
+<body>
+<div class="nav">
+<strong>WDAY pitch:</strong>
+<a href="index.html">Home</a>
+<a href="tearsheet.html">Tearsheet</a>
+<a href="brief.html">Brief</a>
+<a href="addendum.html">Addendum</a>
+<a href="backlog.html">Backlog</a>
+<a href="competitors.html">Competitors</a>
+<a href="a16z_rebuttal.html">a16z rebuttal</a>
+<a href="assumptions.html">Assumptions</a>
+<a href="ic_qa.html">IC Q&amp;A</a>
+<a href="WDAY_Model.xlsx" download>↓ Excel model</a>
+</div>
+<h1>Competitor analysis</h1>
+<p><em>Capability matrix with researched 1-10 scoring per vendor. Real research backing where claims could be otherwise dismissed.</em></p>
+<p>This page tests the bimodal Workday thesis from the demand side: if a CFO/CHRO sat down today to choose an HCM/payroll/finance stack at &gt;5,000 EE, what does the menu actually look like? Ten vendors are scored on ten capabilities (1-10) plus an overall value score and a price tier. Scoring blends Gartner MQ for Cloud HCM Suites 1,000+ EE (Sept 2025), IDC MarketScape, Workday's Q4 FY26 disclosures, public ARR estimates, and analyst PEPM ranges. Scores are deliberately calibrated — a 10 is best-in-class for that capability; a 3 is a known weakness. No vendor is rounded up or down out of politeness.</p>
+<h2>The matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Ent. HCM</th>
+<th>Financials</th>
+<th>AI</th>
+<th>UI/UX</th>
+<th>Integration</th>
+<th>Mid-mkt fit</th>
+<th>Impl. speed</th>
+<th>FDE/CSM</th>
+<th>Extensibility</th>
+<th>Compliance</th>
+<th><strong>Value</strong></th>
+<th><strong>Price</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Workday</strong></td>
+<td>10</td>
+<td>7</td>
+<td>7</td>
+<td>5</td>
+<td>9</td>
+<td>4</td>
+<td>4</td>
+<td>10</td>
+<td>7</td>
+<td>9</td>
+<td><strong>7</strong></td>
+<td><strong>$$$$</strong></td>
+</tr>
+<tr>
+<td>SAP SuccessFactors</td>
+<td>8</td>
+<td>9</td>
+<td>5</td>
+<td>4</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>8</td>
+<td>7</td>
+<td>9</td>
+<td><strong>6</strong></td>
+<td><strong>$$$$</strong></td>
+</tr>
+<tr>
+<td>Oracle Fusion HCM</td>
+<td>8</td>
+<td>10</td>
+<td>6</td>
+<td>4</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>8</td>
+<td>7</td>
+<td>9</td>
+<td><strong>6</strong></td>
+<td><strong>$$$$</strong></td>
+</tr>
+<tr>
+<td>UKG (Pro + Kronos)</td>
+<td>7</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>5</td>
+<td>7</td>
+<td>5</td>
+<td>8</td>
+<td><strong>6</strong></td>
+<td><strong>$$$</strong></td>
+</tr>
+<tr>
+<td>Dayforce (Ceridian)</td>
+<td>7</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td>5</td>
+<td>8</td>
+<td><strong>7</strong></td>
+<td><strong>$$$</strong></td>
+</tr>
+<tr>
+<td>ADP (WFN / Vantage)</td>
+<td>6</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>7</td>
+<td>8</td>
+<td>7</td>
+<td>7</td>
+<td>4</td>
+<td>10</td>
+<td><strong>7</strong></td>
+<td><strong>$$</strong></td>
+</tr>
+<tr>
+<td>ServiceNow HRSD</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>7</td>
+<td>9</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+<td><strong>6</strong></td>
+<td><strong>$$$</strong></td>
+</tr>
+<tr>
+<td>MSFT Dyn 365 HR + Copilot</td>
+<td>5</td>
+<td>7</td>
+<td>9</td>
+<td>7</td>
+<td>9</td>
+<td>6</td>
+<td>5</td>
+<td>6</td>
+<td>8</td>
+<td>7</td>
+<td><strong>7</strong></td>
+<td><strong>$$$</strong></td>
+</tr>
+<tr>
+<td>Rippling</td>
+<td>4</td>
+<td>5</td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+<td>9</td>
+<td>8</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td><strong>8</strong></td>
+<td><strong>$$</strong></td>
+</tr>
+<tr>
+<td>Deel</td>
+<td>3</td>
+<td>3</td>
+<td>7</td>
+<td>8</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+<td>4</td>
+<td>5</td>
+<td>7</td>
+<td><strong>7</strong></td>
+<td><strong>$</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>How to read the table</h2>
+<p><strong>Vertical axis (vendors)</strong> is the realistic 2026 menu at enterprise scale. Gusto, Justworks, Lattice, Paylocity, and Eightfold were excluded — they are either SMB-only (Gusto, Justworks), complementary modules (Lattice integrates <em>with</em> Workday), or category-narrow point solutions (Eightfold, with no Series F since 2021). The cut is "could plausibly anchor a 5,000+ EE workforce stack."</p>
+<p><strong>Horizontal axis (capabilities)</strong> is ten dimensions where vendors materially differ:</p>
+<ol>
+<li><em>Enterprise HCM depth</em> — multi-country payroll, union benefits, federal contractor / SOX 404, complex org models.</li>
+<li><em>Financials / ERP</em> — GL, AP/AR, Procurement, Expense, Planning.</li>
+<li><em>AI / Agent integration</em> — agents in GA, AI ARR, foundation-model layering.</li>
+<li><em>UI / UX modernness</em> — how the product <em>feels</em> in 2026.</li>
+<li><em>Integration ecosystem</em> — APIs, ETL, partner connectors.</li>
+<li><em>Mid-market fit</em> — sub-3,000-EE TCO and time-to-value.</li>
+<li><em>Implementation speed</em> — months to go-live for a 5K-EE deploy.</li>
+<li><em>FDE / CSM network</em> — internal deployment consultants + partner ecosystem at Deloitte/Accenture/Kainos/etc.</li>
+<li><em>Platform extensibility</em> — low-code, Build/Extend, third-party agent registry.</li>
+<li><em>Compliance breadth</em> — GDPR, EU Pay Transparency, EEO-1, country-specific payroll.</li>
+</ol>
+<p><strong>Scores 1-10</strong> are calibrated against the best-in-class vendor <em>in that column</em>, not against an absolute platonic ideal. A 10 means "no one is meaningfully better today"; a 7 is "strong but trailing the leader"; a 4-5 is "present but not a reason to buy"; a 1-3 is "known weakness."</p>
+<p><strong>Price tier</strong> is fully-loaded TCO per employee per year, including software subscription, implementation amortized over 3 years, and ongoing services: <code>$</code> &lt;$50, <code>$$</code> $50-200, <code>$$$</code> $200-500, <code>$$$$</code> $500+. Workday's $$$$ reflects $500-800/EE/yr including ~150-250% of year-one subscription in implementation (Outsail 2026, Redress Compliance 2026).</p>
+<p><strong>Value</strong> is a holistic 1-10 read on capability-per-dollar at the <em>fit segment</em> — i.e., Rippling's 8 reflects its value at sub-3K EE, not against Workday at 50K EE.</p>
+<h2>Evidence per cell (selected)</h2>
+<p><strong>Workday — Ent. HCM 10, FDE 10, Mid-mkt 4.</strong> Named Leader in Gartner MQ Cloud HCM Suites 1,000+ EE for 10 consecutive years (Sept 2025), highest Ability to Execute. ~4K internal deployment consultants per FY26 10-K plus 15-40K partner staff across Deloitte ($39.5B consulting), Accenture, IBM, Kainos, Cognizant — the "FDE army" is 5-7× Palantir's. Mid-market is the known weakness: 12-18mo deployments, ~$500+/EE/yr fully loaded. AI ARR &gt;$400M growing &gt;100% YoY (Q4 FY26), 12 Illuminate agents in GA, Sana GA Feb 2026 (~3 months post-close).</p>
+<p><strong>SAP SuccessFactors — Financials 9, AI 5.</strong> Bundled with SAP S/4HANA gives a 9 on ERP — the strongest financials peer because it pulls from the actual ledger F500s already run. Joule AI assistant is real but trailing Workday in agent count and ARR disclosure; 1H 2026 release added AI succession planning but no public ARR number. Leader 10 consecutive years in Gartner MQ.</p>
+<p><strong>Oracle Fusion HCM — Financials 10, AI 6.</strong> Furthest right on Completeness of Vision for 8 consecutive years (Gartner MQ Sept 2025). Owns the database layer (OCI + Oracle DB) — gives a structural AI/data advantage no other vendor has. Estimated $2.5-3.0B HCM revenue. Oracle ERP is the 10/10 reference standard for global financials.</p>
+<p><strong>UKG — Ent. HCM 7, Financials 4.</strong> Post Ultimate Software + Kronos merger, UKG owns workforce-management (time, scheduling, attendance) better than anyone — Kronos is the de facto standard in healthcare, retail, manufacturing union environments. Weakness: thin financials story, weaker AI roadmap than the top three. Gartner MQ Leader.</p>
+<p><strong>Dayforce (Ceridian) — Impl. speed 6, Mid-mkt 7.</strong> The closest <em>public</em> peer to Workday at similar growth profile. Single-engine "always-on" payroll architecture differentiates technically. Mid-to-upper-mid sweet spot (1K-15K EE). Leader in 2025 Gartner MQ.</p>
+<p><strong>ADP — Compliance 10, Financials 3.</strong> ADP's 10 on compliance is the only 10 in that column — it processes 1-in-6 US private-sector paychecks, and its country-by-country payroll engine is the reference incumbent. ~$20B revenue. Trade-off: thin HCM modernization, weak AI (no public agent ARR), no financials offering. Mid-market fit is genuinely high — WFN deploys in weeks, not months.</p>
+<p><strong>ServiceNow HRSD — AI 8, Extensibility 9, Ent. HCM 4.</strong> Not an HCM core — HR Service Delivery + Workforce sits <em>on top of</em> whatever HCM the customer runs. $11B+ ARR. AI Agents at NW2025 are best-in-class for IT-style workflows. Extensibility 9 reflects Now Platform as a true PaaS. Excluded from Gartner Cloud HCM MQ because it's a different category — which is the point: ServiceNow could become the orchestration layer that disintermediates the HCM UI without ever owning the system of record.</p>
+<p><strong>Microsoft Dynamics 365 HR + Copilot — AI 9, Ent. HCM 5.</strong> AI score 9 reflects Copilot's foundation-model integration via Azure AI Foundry — the deepest model access of any vendor here. <em>Existential threat angle</em>: Microsoft has the distribution (every F500 office worker), the AI (OpenAI partnership), and the financials cross-sell (Dynamics 365 Finance). What it lacks is HCM depth — D365 HR is a thin SuccessFactors competitor, not a Workday-grade core. Workday's Agent Gateway accepting Copilot Studio agents (Sept 2025) is the diplomatic finesse.</p>
+<p><strong>Rippling — UI/UX 9, Mid-mkt 9, Ent. HCM 4.</strong> $1.0B ARR Mar 2026, 78% YoY, $16.8B valuation. &gt;20,000 customers. Unified workforce graph (HR + IT + Finance day one) is the most architecturally sound foundation for AI agents in this set. UI/UX 9 is real — best-feeling product here. But customers skew &lt;1,000 EE; no public evidence of enterprise displacement at &gt;5K EE. Ent. HCM 4 reflects thin multi-country payroll outside the US and no SOX 404 reference customers.</p>
+<p><strong>Deel — Impl. speed 9, Price $.</strong> $1.4B ARR Feb 2026, 63% YoY, 35,000 customers, 1.5M workers in 150+ countries. The 9 on implementation speed reflects EOR/contractor onboarding in days. Critically, Deel is a <strong>Workday Global Payroll Cloud certified partner</strong> as of early 2026 — Deel doesn't compete for the HCM core, it slots underneath it. Ent. HCM 3 reflects "lightweight HRIS" per multiple analyst reviews.</p>
+<h2>What the matrix reveals</h2>
+<p><strong>Three takeaways for the WDAY thesis:</strong></p>
+<p>First, <strong>Workday's 10 on FDE network is the most defensible single score in the matrix</strong>. No AI-native can replicate ~4K internal consultants + 15-40K partner staff in 24 months — that is the moat the a16z critique under-weights. The closest competitor on this axis is SAP/Oracle, not Rippling.</p>
+<p>Second, <strong>the "AI threat" decomposes by axis, not as a monolith</strong>. Rippling/Deel win UI/UX and mid-market fit. Microsoft wins raw AI. ServiceNow wins extensibility. But <em>no single competitor</em> scores &gt;6 on Ent. HCM depth — the column where Workday is a 10. That asymmetry is the thesis.</p>
+<p>Third, <strong>the most surprising score is Microsoft AI = 9, Workday AI = 7</strong>. Workday has more agents in GA ($400M AI ARR), but Microsoft's foundation-model integration via Azure AI Foundry + Copilot distribution is structurally deeper. Workday's response — Agent Gateway accepting third-party Copilot agents — is the right defensive move (be the registry, not the agent vendor), but it concedes that Workday won't win the model layer. The bull case requires registry economics to be valuable, not model economics.</p>
+<h2>Sources</h2>
+<ul>
+<li>Gartner Magic Quadrant for Cloud HCM Suites 1,000+ EE (Sept 2025) — Workday Leader 10 consecutive years; Oracle furthest right Completeness of Vision 8 consecutive years.</li>
+<li>IDC MarketScape: Worldwide HCM 2025.</li>
+<li>Workday Q4 FY26 8-K (SEC) and FY26 10-K (AI ARR, agent count, FDE headcount).</li>
+<li>Public ARR estimates: Rippling ~$1.0B (ARR Club Mar 2026), Deel ~$1.4B (Sacra Feb 2026), ServiceNow ~$11B, ADP ~$20B (10-K).</li>
+<li>Pricing/TCO: Outsail Workday cost guide; Redress Compliance 2026; Monetizely Workday vs SAP vs Oracle.</li>
+<li>Internal: <code>wiki/10_competitive_landscape.md</code>.</li>
+</ul>
+<div class="footer">JAOD &amp; (mainly) Claude · May 20, 2026 · <a href="index.html">Home</a></div>
+<div class="last-updated">Last updated: 2026-05-20 18:47 ET</div>
+</body>
+</html>
