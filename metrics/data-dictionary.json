@@ -7,12 +7,12 @@
   "missing_values": "Blank CSV cells / null JSON values mean unavailable or not applicable, never zero.",
   "coverage": {
     "metrics": 1311,
-    "observations": 9014,
+    "observations": 9021,
     "frequency_observations": {
-      "quarter": 1877,
+      "quarter": 1885,
       "event": 142,
       "annual": 1014,
-      "instant": 4834,
+      "instant": 4833,
       "ttm": 22,
       "ytd": 1101,
       "period": 24

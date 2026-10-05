@@ -1,4 +1,8 @@
 {
+  "chart_horizon": {
+    "start": "2023-07-31",
+    "end": "2026-10-04"
+  },
   "as_of": "2026-10-04",
   "metrics": [
     {
@@ -6700,18 +6704,151 @@
       "origin": "strategic",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "instant",
+      "default_frequency": "quarter",
       "series": {
-        "instant": [
+        "quarter": [
           {
             "date": "2024-07-31",
             "period": "Q2 FY2025",
             "value": 9,
             "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-2024-financial-analyst-day.pdf#page=56",
             "notes": "",
-            "frequency": "instant",
+            "frequency": "quarter",
             "qualifier": "",
             "kind": "actual",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2024-10-31",
+            "period": "Q3 FY2025",
+            "value": 10,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2025-third-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-01-31",
+            "period": "Q4 FY2025",
+            "value": 15,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2025-fourth-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-04-30",
+            "period": "Q1 FY2026",
+            "value": 20,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-first-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-07-31",
+            "period": "Q2 FY2026",
+            "value": 20,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-second-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-10-31",
+            "period": "Q3 FY2026",
+            "value": 20,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-third-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2026-01-31",
+            "period": "Q4 FY2026",
+            "value": 25,
+            "qualifier": "\u2248",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-fourth-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2026-04-30",
+            "period": "Q1 FY2027",
+            "value": 30,
+            "qualifier": "\u2248",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2027-first-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
             "growth": {
               "yoy": null,
               "prior_yoy": null,
@@ -9572,9 +9709,9 @@
   ],
   "stats": {
     "metric_count": 166,
-    "observation_count": 388,
-    "document_count": 38,
-    "quarterly_series": 58,
+    "observation_count": 395,
+    "document_count": 40,
+    "quarterly_series": 59,
     "series_with_3y": 1
   },
   "coverage_summary": "Operating KPI coverage through October 4, 2026: customers, bookings, retention, product adoption, AI usage, partners and market opportunity. Product and geographic revenue detail is retained. The website shows operating KPIs. The full CSV and JSON downloads also include financial statements, accounting footnotes, EPS, cash flow and financial guidance. Call Q&A coverage remains incomplete.",
@@ -9879,6 +10016,16 @@
       "source_url": "https://newsroom.workday.com/2023-08-24-Workday-Announces-Fiscal-2024-Second-Quarter-Financial-Results",
       "title": "Referenced disclosure",
       "origin": "operating"
+    },
+    {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-fourth-quarter-prepared-remarks.pdf",
+      "title": "Referenced disclosure",
+      "origin": "strategic"
+    },
+    {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2027-first-quarter-prepared-remarks.pdf",
+      "title": "Referenced disclosure",
+      "origin": "strategic"
     }
   ],
   "gaps": [

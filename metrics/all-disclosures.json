@@ -3,12 +3,12 @@
   "as_of": "2026-10-04",
   "stats": {
     "metrics": 1311,
-    "observations": 9014,
+    "observations": 9021,
     "frequency_observations": {
-      "quarter": 1877,
+      "quarter": 1885,
       "event": 142,
       "annual": 1014,
-      "instant": 4834,
+      "instant": 4833,
       "ttm": 22,
       "ytd": 1101,
       "period": 24
@@ -11040,18 +11040,151 @@
       "origin": "strategic",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "instant",
+      "default_frequency": "quarter",
       "series": {
-        "instant": [
+        "quarter": [
           {
             "date": "2024-07-31",
             "period": "Q2 FY2025",
             "value": 9,
             "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-2024-financial-analyst-day.pdf#page=56",
             "notes": "",
-            "frequency": "instant",
+            "frequency": "quarter",
             "qualifier": "",
             "kind": "actual",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2024-10-31",
+            "period": "Q3 FY2025",
+            "value": 10,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2025-third-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-01-31",
+            "period": "Q4 FY2025",
+            "value": 15,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2025-fourth-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-04-30",
+            "period": "Q1 FY2026",
+            "value": 20,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-first-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-07-31",
+            "period": "Q2 FY2026",
+            "value": 20,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-second-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2025-10-31",
+            "period": "Q3 FY2026",
+            "value": 20,
+            "qualifier": ">",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-third-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2026-01-31",
+            "period": "Q4 FY2026",
+            "value": 25,
+            "qualifier": "\u2248",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2026-fourth-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2026-04-30",
+            "period": "Q1 FY2027",
+            "value": 30,
+            "qualifier": "\u2248",
+            "frequency": "quarter",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2027-first-quarter-prepared-remarks.pdf",
+            "source_detail": "Management prepared remarks: partner-sourced share of net-new ACV in the quarter.",
+            "kind": "actual",
+            "notes": "Thresholds and approximate disclosures retain their original qualifiers.",
             "growth": {
               "yoy": null,
               "prior_yoy": null,
@@ -15699,7 +15832,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -28981,7 +29114,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -29320,7 +29453,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -31248,7 +31381,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -32079,7 +32212,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -33159,7 +33292,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -33586,7 +33719,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -33696,7 +33829,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -35177,7 +35310,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "quarter": [
           {
@@ -44785,7 +44918,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -45747,7 +45880,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -45940,7 +46073,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -46362,7 +46495,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -46783,7 +46916,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -47205,7 +47338,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -49938,7 +50071,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -51141,7 +51274,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -56272,7 +56405,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -56725,7 +56858,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -59411,7 +59544,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -59608,7 +59741,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -59800,7 +59933,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -60501,7 +60634,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -60914,7 +61047,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -61173,7 +61306,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -68782,7 +68915,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -68979,7 +69112,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -72886,7 +73019,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -76445,7 +76578,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -94495,7 +94628,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -94727,7 +94860,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -96819,7 +96952,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -97904,7 +98037,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -98321,7 +98454,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -98741,7 +98874,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -99199,7 +99332,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -102283,7 +102416,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -102891,7 +103024,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -103049,7 +103182,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -103704,7 +103837,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -104423,7 +104556,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -104593,7 +104726,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -105757,7 +105890,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "quarter": [
           {
@@ -107948,7 +108081,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -108306,7 +108439,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -108625,7 +108758,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -110175,7 +110308,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -114893,7 +115026,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -119844,7 +119977,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -120204,7 +120337,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -122320,7 +122453,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -127320,7 +127453,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -128009,7 +128142,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -129937,7 +130070,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -134316,7 +134449,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -134508,7 +134641,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -134966,7 +135099,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -135158,7 +135291,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -135554,7 +135687,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -138164,7 +138297,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -138770,7 +138903,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -138862,7 +138995,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -139139,7 +139272,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -139231,7 +139364,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -139803,7 +139936,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "quarter": [
           {
@@ -140043,7 +140176,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -141390,7 +141523,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -141482,7 +141615,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -142410,7 +142543,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -142630,7 +142763,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -142949,7 +143082,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -143041,7 +143174,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -145125,7 +145258,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -145335,7 +145468,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -146491,7 +146624,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -146619,7 +146752,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -151194,7 +151327,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -151381,7 +151514,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -151564,7 +151697,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -156612,7 +156745,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -158753,7 +158886,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -160168,7 +160301,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -166084,7 +166217,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -173432,7 +173565,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -174692,7 +174825,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -174897,7 +175030,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -175098,7 +175231,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -175498,7 +175631,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -175703,7 +175836,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -175904,7 +176037,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -176300,7 +176433,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "points",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -176895,7 +177028,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -177088,7 +177221,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -177265,7 +177398,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "ytd": [
           {
@@ -177458,7 +177591,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -199500,7 +199633,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -199857,7 +199990,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -205657,7 +205790,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -207618,7 +207751,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -209517,7 +209650,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -213578,7 +213711,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -213995,7 +214128,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "annual",
+      "default_frequency": "quarter",
       "series": {
         "annual": [
           {
@@ -215879,7 +216012,7 @@
       "origin": "financial",
       "is_forecast": false,
       "change_mode": "growth",
-      "default_frequency": "ytd",
+      "default_frequency": "quarter",
       "series": {
         "quarter": [
           {
