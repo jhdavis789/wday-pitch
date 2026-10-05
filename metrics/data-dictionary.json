@@ -7,9 +7,9 @@
   "missing_values": "Blank CSV cells / null JSON values mean unavailable or not applicable, never zero.",
   "coverage": {
     "metrics": 1311,
-    "observations": 9021,
+    "observations": 9062,
     "frequency_observations": {
-      "quarter": 1885,
+      "quarter": 1926,
       "event": 142,
       "annual": 1014,
       "instant": 4833,
@@ -41,7 +41,7 @@
     "prior_YoY_percent_or_pp": "Year-on-year comparison one year before this observation, on the same period basis.",
     "growth_unit": "percent or percentage_points. Specifies units for YoY and prior YoY.",
     "acceleration_pp": "Latest YoY change minus prior YoY change. For rate metrics, difference between successive annual percentage-point moves.",
-    "long_term": "Three-year CAGR or annualized rate-point change when available; otherwise a labeled two-year measure. Blank when not comparable.",
+    "long_term": "Longest available two- to six-year CAGR or annualized rate-point change. Actual horizon is labeled; blank when not comparable.",
     "long_term_basis": "Exact calculation label, including horizon and CAGR versus annualized percentage-point change.",
     "long_term_start_date": "Start observation date used by the long-term calculation.",
     "growth_unavailable_reason": "Reason growth is unavailable, such as a bound, forecast, nonpositive base or missing comparison.",
@@ -79,6 +79,7 @@
     "Reported threshold observations do not support precise growth rates.",
     "Historical customer satisfaction population changed; organic-agent definition/availability broadened.",
     "July 2023 12-month backlog is not shown in the contemporary release (which used 24-month backlog); filing data may supply retrospective comparison. Do not substitute 24-month backlog for cRPO.",
+    "Six-year timeline extends to October 2020. Historical backfill is partial: selected 2020\u20132022 total backlog disclosures and FY2023\u2013Q1 FY2024 investor-presentation operating snapshots. Missing older quarters and other KPI histories are not estimated.",
     "This is a broad inventory of investment-relevant recurring metrics and selected one-off disclosures, not literally every numeral (e.g. slide numbers, executive tenure, illustrative hypothetical contracts).",
     "Main annual subscription and margin guidance from August 2023 onward included; detailed services, OCF, capex and next-quarter guidance before Q2 FY2025 are not exhaustively transcribed.",
     "Some sporadic operating metrics have one observation and no disclosed three-year comparable series. These must display insufficient history rather than invented growth.",

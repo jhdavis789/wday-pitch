@@ -1,6 +1,6 @@
 {
   "chart_horizon": {
-    "start": "2023-07-31",
+    "start": "2020-10-04",
     "end": "2026-10-04"
   },
   "as_of": "2026-10-04",
@@ -54,6 +54,96 @@
       "default_frequency": "quarter",
       "series": {
         "quarter": [
+          {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 175.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 175.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 175.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 175.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 175.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
           {
             "date": "2023-07-31",
             "period": "Q2 FY24",
@@ -414,6 +504,96 @@
       "default_frequency": "quarter",
       "series": {
         "quarter": [
+          {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 50.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 50.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 50.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 50.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 50.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
           {
             "date": "2023-07-31",
             "period": "Q2 FY24",
@@ -879,6 +1059,96 @@
       "series": {
         "quarter": [
           {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 9500.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 9500.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 9500.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 10000.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 10000.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
             "date": "2023-07-31",
             "period": "Q2 FY24",
             "value": 10000.0,
@@ -1187,6 +1457,96 @@
       "series": {
         "quarter": [
           {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 70.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 70.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 70.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 70.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 70.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
             "date": "2023-07-31",
             "period": "Q2 FY24",
             "value": 70.0,
@@ -1425,6 +1785,96 @@
       "default_frequency": "quarter",
       "series": {
         "quarter": [
+          {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 60.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 60.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 60.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 60.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 60.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
           {
             "date": "2023-07-31",
             "period": "Q2 FY24",
@@ -2223,6 +2673,112 @@
       "series": {
         "quarter": [
           {
+            "date": "2020-10-31",
+            "period": "Q3 FY2021",
+            "value": 8.87,
+            "frequency": "quarter",
+            "qualifier": "",
+            "source_url": "https://newsroom.workday.com/2020-11-19-Workday-Announces-Fiscal-2021-Third-Quarter-Financial-Results",
+            "source_detail": "Quarterly financial results: total subscription revenue backlog.",
+            "notes": "Total backlog; not 24-month or 12-month backlog.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2021-01-31",
+            "period": "Q4 FY2021",
+            "value": 10.09,
+            "frequency": "quarter",
+            "qualifier": "",
+            "source_url": "https://newsroom.workday.com/2021-02-25-Workday-Announces-Fiscal-Fourth-Quarter-and-Full-Year-2021-Financial-Results",
+            "source_detail": "Quarterly financial results: total subscription revenue backlog.",
+            "notes": "Total backlog; not 24-month or 12-month backlog.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2021-04-30",
+            "period": "Q1 FY2022",
+            "value": 10.08,
+            "frequency": "quarter",
+            "qualifier": "",
+            "source_url": "https://newsroom.workday.com/2021-05-26-Workday-Announces-Fiscal-2022-First-Quarter-Financial-Results",
+            "source_detail": "Quarterly financial results: total subscription revenue backlog.",
+            "notes": "Total backlog; not 24-month or 12-month backlog.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2021-07-31",
+            "period": "Q2 FY2022",
+            "value": 10.58,
+            "frequency": "quarter",
+            "qualifier": "",
+            "source_url": "https://newsroom.workday.com/2021-08-26-Workday-Announces-Fiscal-2022-Second-Quarter-Financial-Results",
+            "source_detail": "Quarterly financial results: total subscription revenue backlog.",
+            "notes": "Total backlog; not 24-month or 12-month backlog.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
+            }
+          },
+          {
+            "date": "2021-10-31",
+            "period": "Q3 FY2022",
+            "value": 10.97,
+            "frequency": "quarter",
+            "qualifier": "",
+            "source_url": "https://newsroom.workday.com/2021-11-18-Workday-Announces-Fiscal-2022-Third-Quarter-Financial-Results",
+            "source_detail": "Quarterly financial results: total subscription revenue backlog.",
+            "notes": "Total backlog; not 24-month or 12-month backlog.",
+            "growth": {
+              "yoy": 23.675310033821884,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null
+            }
+          },
+          {
+            "date": "2022-01-31",
+            "period": "Q4 FY2022",
+            "value": 12.81,
+            "frequency": "quarter",
+            "qualifier": "",
+            "source_url": "https://newsroom.workday.com/2022-02-28-Workday-Announces-Fiscal-2022-Fourth-Quarter-and-Full-Year-Financial-Results",
+            "source_detail": "Quarterly financial results: total subscription revenue backlog.",
+            "notes": "Total backlog; not 24-month or 12-month backlog.",
+            "growth": {
+              "yoy": 26.957383548067405,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null
+            }
+          },
+          {
             "date": "2023-07-31",
             "period": "Q2 FY24",
             "value": 17.85,
@@ -2234,8 +2790,9 @@
               "yoy": null,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null,
+              "long_term": 29.890167359040486,
+              "long_term_label": "2y CAGR",
+              "long_term_start": "2021-07-31",
               "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
             }
           },
@@ -2251,8 +2808,9 @@
               "yoy": null,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null,
+              "long_term": 27.651008484377893,
+              "long_term_label": "3y CAGR",
+              "long_term_start": "2020-10-31",
               "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
             }
           },
@@ -2268,8 +2826,9 @@
               "yoy": null,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null,
+              "long_term": 27.513697168183814,
+              "long_term_label": "3y CAGR",
+              "long_term_start": "2021-01-31",
               "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
             }
           },
@@ -2285,8 +2844,9 @@
               "yoy": null,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null,
+              "long_term": 27.06618786450523,
+              "long_term_label": "3y CAGR",
+              "long_term_start": "2021-04-30",
               "reason": "No comparable prior-year observation, or growth is not meaningful from a nonpositive base."
             }
           },
@@ -2302,8 +2862,9 @@
               "yoy": 20.896358543417335,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null
+              "long_term": 26.820245885129946,
+              "long_term_label": "3y CAGR",
+              "long_term_start": "2021-07-31"
             }
           },
           {
@@ -2318,8 +2879,9 @@
               "yoy": 20.27100271002711,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null
+              "long_term": 25.764601952338296,
+              "long_term_label": "4y CAGR",
+              "long_term_start": "2020-10-31"
             }
           },
           {
@@ -2334,8 +2896,9 @@
               "yoy": 19.789674952198833,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null
+              "long_term": 25.537210767486364,
+              "long_term_label": "4y CAGR",
+              "long_term_start": "2021-01-31"
             }
           },
           {
@@ -2350,8 +2913,9 @@
               "yoy": 19.052224371373306,
               "prior_yoy": null,
               "acceleration": null,
-              "long_term": null,
-              "long_term_label": null
+              "long_term": 25.013489879612738,
+              "long_term_label": "4y CAGR",
+              "long_term_start": "2021-04-30"
             }
           },
           {
@@ -2366,9 +2930,9 @@
               "yoy": 17.56255792400372,
               "prior_yoy": 20.896358543417335,
               "acceleration": -3.3338006194136156,
-              "long_term": 19.217805524433395,
-              "long_term_label": "2y CAGR",
-              "long_term_start": "2023-07-31"
+              "long_term": 24.439626774376812,
+              "long_term_label": "4y CAGR",
+              "long_term_start": "2021-07-31"
             }
           },
           {
@@ -2383,9 +2947,9 @@
               "yoy": 16.989634970707513,
               "prior_yoy": 20.27100271002711,
               "acceleration": -3.2813677393195952,
-              "long_term": 18.61897278516218,
-              "long_term_label": "2y CAGR",
-              "long_term_start": "2023-10-31"
+              "long_term": 23.95847185178914,
+              "long_term_label": "5y CAGR",
+              "long_term_start": "2020-10-31"
             }
           },
           {
@@ -2400,9 +2964,9 @@
               "yoy": 12.134876296887477,
               "prior_yoy": 19.789674952198833,
               "acceleration": -7.654798655311357,
-              "long_term": 15.899095692801568,
-              "long_term_label": "2y CAGR",
-              "long_term_start": "2024-01-31"
+              "long_term": 22.73434853404812,
+              "long_term_label": "5y CAGR",
+              "long_term_start": "2021-01-31"
             }
           },
           {
@@ -2417,9 +2981,9 @@
               "yoy": 10.844841592201448,
               "prior_yoy": 19.052224371373306,
               "acceleration": -8.207382779171859,
-              "long_term": 14.875258222317388,
-              "long_term_label": "2y CAGR",
-              "long_term_start": "2024-04-30"
+              "long_term": 22.041798950594284,
+              "long_term_label": "5y CAGR",
+              "long_term_start": "2021-04-30"
             }
           },
           {
@@ -2434,9 +2998,9 @@
               "yoy": 8.013401655498619,
               "prior_yoy": 17.56255792400372,
               "acceleration": -9.5491562685051,
-              "long_term": 15.35948186481293,
-              "long_term_label": "3y CAGR",
-              "long_term_start": "2023-07-31"
+              "long_term": 20.965768424938357,
+              "long_term_label": "5y CAGR",
+              "long_term_start": "2021-07-31"
             }
           }
         ]
@@ -8131,6 +8695,96 @@
       "series": {
         "quarter": [
           {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 30.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 30.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 30.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 30.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 30.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
             "date": "2023-07-31",
             "period": "Q2 FY24",
             "value": 30.0,
@@ -8369,6 +9023,96 @@
       "default_frequency": "quarter",
       "series": {
         "quarter": [
+          {
+            "date": "2022-04-30",
+            "period": "Q1 FY2023",
+            "value": 15900.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-07-31",
+            "period": "Q2 FY2023",
+            "value": 16900.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2022-10-31",
+            "period": "Q3 FY2023",
+            "value": 17500.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-01-31",
+            "period": "Q4 FY2023",
+            "value": 17700.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
+          {
+            "date": "2023-04-30",
+            "period": "Q1 FY2024",
+            "value": 17800.0,
+            "frequency": "quarter",
+            "qualifier": "\u2265",
+            "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+            "source_detail": "Workday by the Numbers, investor presentation.",
+            "notes": "Presentation threshold; not an exact count.",
+            "growth": {
+              "yoy": null,
+              "prior_yoy": null,
+              "acceleration": null,
+              "long_term": null,
+              "long_term_label": null,
+              "reason": "Growth not calculated for guidance, threshold disclosures or nonstandard event periods."
+            }
+          },
           {
             "date": "2023-07-31",
             "period": "Q2 FY24",
@@ -9709,8 +10453,8 @@
   ],
   "stats": {
     "metric_count": 166,
-    "observation_count": 395,
-    "document_count": 40,
+    "observation_count": 436,
+    "document_count": 51,
     "quarterly_series": 59,
     "series_with_3y": 1
   },
@@ -10013,7 +10757,62 @@
       "origin": "qa"
     },
     {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-first-quarter-investor-presentation.pdf",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-second-quarter-investor-presentation.pdf",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-third-quarter-investor-presentation.pdf",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2023-fourth-quarter-investor-presentation.pdf",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://www.workday.com/content/dam/web/en-us/documents/investor/workday-fiscal-2024-first-quarter-investor-presentation.pdf",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
       "source_url": "https://newsroom.workday.com/2023-08-24-Workday-Announces-Fiscal-2024-Second-Quarter-Financial-Results",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://newsroom.workday.com/2020-11-19-Workday-Announces-Fiscal-2021-Third-Quarter-Financial-Results",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://newsroom.workday.com/2021-02-25-Workday-Announces-Fiscal-Fourth-Quarter-and-Full-Year-2021-Financial-Results",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://newsroom.workday.com/2021-05-26-Workday-Announces-Fiscal-2022-First-Quarter-Financial-Results",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://newsroom.workday.com/2021-08-26-Workday-Announces-Fiscal-2022-Second-Quarter-Financial-Results",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://newsroom.workday.com/2021-11-18-Workday-Announces-Fiscal-2022-Third-Quarter-Financial-Results",
+      "title": "Referenced disclosure",
+      "origin": "operating"
+    },
+    {
+      "source_url": "https://newsroom.workday.com/2022-02-28-Workday-Announces-Fiscal-2022-Fourth-Quarter-and-Full-Year-Financial-Results",
       "title": "Referenced disclosure",
       "origin": "operating"
     },
@@ -10036,6 +10835,7 @@
     "Reported threshold observations do not support precise growth rates.",
     "Historical customer satisfaction population changed; organic-agent definition/availability broadened.",
     "July 2023 12-month backlog is not shown in the contemporary release (which used 24-month backlog); filing data may supply retrospective comparison. Do not substitute 24-month backlog for cRPO.",
+    "Six-year timeline extends to October 2020. Historical backfill is partial: selected 2020\u20132022 total backlog disclosures and FY2023\u2013Q1 FY2024 investor-presentation operating snapshots. Missing older quarters and other KPI histories are not estimated.",
     "This is a broad inventory of investment-relevant recurring metrics and selected one-off disclosures, not literally every numeral (e.g. slide numbers, executive tenure, illustrative hypothetical contracts).",
     "Main annual subscription and margin guidance from August 2023 onward included; detailed services, OCF, capex and next-quarter guidance before Q2 FY2025 are not exhaustively transcribed.",
     "Some sporadic operating metrics have one observation and no disclosed three-year comparable series. These must display insufficient history rather than invented growth.",
